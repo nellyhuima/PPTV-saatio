@@ -40,7 +40,7 @@ a{
     font-weight: bold;
     size: 16px;
 }
-#section1{
+#Etusivu{
     height: 550px;
     background-image: url('../components/img/jarvi_aamulla.jpg');
     background-size: cover; 
@@ -49,16 +49,16 @@ a{
     display: inline-block;
     width: 100%;
 }
-#section2{
+#Historia{
     height: 550px;
     background-image: url('../components/img/jarvi_metsa_tausta.jpg');
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     display: inline-block;
     width: 100%;
 }
-#section3{
+#Lomake{
     height: 550px;
     background-image: url('../components/img/jarvi_heina.jpg');
     background-size: cover; 
@@ -67,7 +67,7 @@ a{
     display: inline-block;
     width: 100%;
 }
-#section4{
+#UKK{
     height: 550px;
     background-image: url('../components/img/sorsat.2.jpg');
     background-size: cover; 
@@ -76,7 +76,7 @@ a{
     display: inline-block;
     width: 100%;
 }
-#section5{
+#OtaYhteytta{
     height: 550px;
     background-image: url('../components/img/puu_jarvi.jpg');
     background-size: cover; 
@@ -86,7 +86,7 @@ a{
     width: 100%;
 }
 
-#section6{
+#Footer{
     height: 125px;
     background: rgb(67, 29, 3);
     display: inline-block;
