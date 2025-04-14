@@ -16,24 +16,43 @@
           <li><a href="#section5">Ota yhteyttä</a></li>
       </ul>
   </nav>
-
   <div id="section1">
-    
   </div>
+
   <div id="section2">
-    <h1>This is the historia section</h1>
   </div>
+
   <div id="section3">
-    <h1>This is the lomake section</h1>
   </div>
+
   <div id="section4">
-    <h1>This is the UKK section</h1>
   </div>
+
   <div id="section5">
-    <h1>This is the Ota yhteyttä section</h1>
   </div>
+
   <div id="section6">
-    <h1>This is the Footer section</h1>
   </div>
+
+  <script>
+    const sections = {
+      section1: 'components/EtusivuN/Etusivu.html',
+      section2: 'components/HistoriaN/Historia.html',
+      section3: 'components/HakemusI/Hakemus.html',
+      section4: 'components/UKKI/UKK.html',
+      section5: 'components/OtaYhteytta/OtaYhteytta.html'
+    };
+  
+    Object.entries(sections).forEach(([id, file]) => {
+      fetch(file)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+        })
+        .catch(error => {
+          console.error(`Error loading ${file}:`, error);
+        });
+    });
+  </script>
   </body>
 </html>
