@@ -1,12 +1,18 @@
 .ukkpohja {
-    background-color: rgba(54, 88, 100, 0.9);
+    background-color: rgba(50, 68, 82, 0.9);
     border-radius: 1em;
     margin-bottom: 7em;
-    margin-left: 19em;
-    margin-right: 19em;
+    margin-left: 3em;
+    margin-right: 34em;
     margin-top: 4em;
     padding: 1.5em;
 }
 
+.answer {
+    display: none;
+  }
+  .faq-item h3 {
+    cursor: pointer;
+  }
 
 
