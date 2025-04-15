@@ -1,0 +1,13 @@
+.etusivu {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+.Econtent {
+    flex-direction: column;
+    justify-items: center;
+    background-color: rgba(49, 46, 38, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+}
