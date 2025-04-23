@@ -20,7 +20,7 @@ h1 {
     text-align:start
 }
 
-p {
+.text {
     width: 280px;
     margin: 0em 3em 0em 3em;
     padding-bottom: 1em;
@@ -29,7 +29,7 @@ p {
     text-align:start
 }
 
-button {
+.lomakebutton {
     display: flex;
     font-weight: bold;
     text-align: center;
