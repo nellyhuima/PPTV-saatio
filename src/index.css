@@ -102,3 +102,19 @@ a{
     width: 100vw;
 }
 
+@media (max-width: 1024px) {
+    /* Styles for screens smaller than 768px */
+    a {
+      font-size: 12px;
+      margin: 15px 18px 15px 18px;
+    }
+
+    nav {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+  }

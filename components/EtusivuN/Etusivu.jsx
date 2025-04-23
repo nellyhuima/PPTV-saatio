@@ -5,8 +5,8 @@ const Etusivu = () => {
   return (
     <div className="etusivu">
       <div className="Econtent">
-        <img src="/components/img/logo_digi.png" alt="logo" height="300" />
-        <h1>Opiskelijoiden tukena</h1>
+        <img src="/components/img/whitenewlogopptv.png" alt="logo" height='300' />
+        <h2>Opiskelijoiden tukena</h2>
       </div>
     </div>
   );
