@@ -1,0 +1,27 @@
+.osiot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.yleisesti {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(127, 118, 100, 0.7);
+}
+
+.miksi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(127, 118, 100, 0.7);
+}
+
+.kohteet {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(127, 118, 100, 0.7);
+}
