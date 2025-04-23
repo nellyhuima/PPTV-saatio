@@ -1,18 +1,31 @@
 .ukkpohja {
-    background-color: rgba(50, 68, 82, 0.9);
-    border-radius: 1em;
-    margin-bottom: 7em;
-    margin-left: 3em;
-    margin-right: 34em;
-    margin-top: 4em;
-    padding: 1.5em;
+  margin: 6em 35em 10em 5em;
+  background-color: rgba(50, 68, 82, 0.7);
+  display: block;
+  flex-direction: column;
+  height: 18em;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.question {
+  margin-bottom: 15px;
+  cursor: pointer; 
+  overflow: hidden;
+  margin: 1.5em;
+  cursor: pointer; 
+  font-weight: bold;
+  background-color: #485F7F;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
 .answer {
-    display: none;
-  }
-  .faq-item h3 {
-    cursor: pointer;
-  }
+  padding: 10px;
+  cursor:default;
+  border-radius: 5px;
+  margin-top: 5px;
 
+}
 
