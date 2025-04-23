@@ -11,15 +11,17 @@ const UKK = () => {
   };
 
   const faqData = [
-    { question: "Kysmys 1", answer: "vastaus1." },
-    { question: "kysmys2", answer: "vastaus2." },
-    { question: "kysmys3", answer: "vastaus3" },
+    { question: "Milloin stipendi hakemukset käsitellään?", answer: "Hakemukset käsitellään toukokuussa ja joulukuussa, juuri ennen valmistumistasi" },
+    { question: "Kuka voi hakea stipendiä?", answer: "Seuraavien koulujen opsikelijat voivat hakea; " },
+    { question: "Millä stipendin voi ansaita?", answer: "Ansiot ne ja nuo ja ne ja nuo" },
+    { question: "Kuka olisi hyvä suosittelija?", answer: "suosittelija sieltä ja tuolta voi olla tämä ja tuo" },
+    { question: "Mitä stipendi sisältää?", answer: "Rahasumma määräytyy hakijoiden määrän tai hallituksen päätöksen mukaisesti" },
   ];
 
   return (
     <div className="ukkpohja">
       <div className="ukkcontent">
-      <h1>UKK</h1>
+      <h1>Usein kysytyt kysymykset</h1>
       <section className="faq">
       {faqData.map((item, index) => (
           <div className="question" key={index}>
