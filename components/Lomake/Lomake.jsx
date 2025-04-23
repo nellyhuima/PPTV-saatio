@@ -2,7 +2,7 @@ import React from 'react';
 import './Lomake.css'
 
 const Lomake = () => {
-    console.log('Lomake component loaded');
+
   return (
     <div>
       <h1>Hello world!</h1>

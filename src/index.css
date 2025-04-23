@@ -54,7 +54,7 @@ a{
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-    background-image: url('../components/img/jarvi_metsa_tausta.jpg');
+    background-image: url('../components/img/oksat_aurinko.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ a{
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-    background-image: url('../components/img/jarvi_heina.jpg');
+    background-image: url('../components/img/water_lilies.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;  
@@ -87,7 +87,7 @@ a{
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-    background-image: url('../components/img/puu_jarvi.jpg');
+    background-image: url('../components/img/oksapelto.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
