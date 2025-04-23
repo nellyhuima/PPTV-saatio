@@ -7,55 +7,6 @@
     <link rel="stylesheet" href="./src/index.css">
   </head>
   <body>
-    <div class="navbar">
-      <nav>
-        <ul>
-            <li><a href="#Etusivu">Etusivu</a></li>
-            <li><a href="#Historia">Historia</a></li>
-            <li><a href="#Lomake">Lomake</a></li>
-            <li><a href="#UKK">UKK</a></li>
-            <li><a href="#OtaYhteytta">Ota yhteyttä</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div id="Etusivu">
-    </div>
-
-    <div id="Historia">
-    </div>
-
-    <div id="Lomake">
-    </div>
-
-    <div id="UKK">
-    </div>
-
-    <div id="OtaYhteytta">
-    </div>
-
-    <div id="Footer">
-      <p>footer</p>
-    </div>
-
-  <script>
-    const sections = {
-      Etusivu: 'components/EtusivuN/Etusivu.html',
-      Historia: 'components/HistoriaN/Historia.html',
-      Lomake: 'components/HakemusI/Hakemus.html',
-      UKK: 'components/UKKI/UKK.html',
-      OTaYhtetta: 'components/OtaYhteytta/OtaYhteytta.html'
-    };
-  
-    Object.entries(sections).forEach(([id, file]) => {
-      fetch(file)
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById(id).innerHTML = html;
-        })
-        .catch(error => {
-          console.error(`Error loading ${file}:`, error);
-        });
-    });
-  </script>
+    <main></main>
   </body>
 </html>
