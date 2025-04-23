@@ -4,7 +4,7 @@ import './Hakemus.css';
 const Lomake = () => {
   return (
     <div className="lomake">
-      <div className='lomakeSisalto'>
+      <div className='lomakeContent'>
         <h1>Lomake</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

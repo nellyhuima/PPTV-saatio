@@ -3,7 +3,7 @@
     justify-content: center;
 }
 
-.lomakeSisalto {
+.lomakeContent {
     display: flex;
     width: fit-content;
     flex-direction: column;
