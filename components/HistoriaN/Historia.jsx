@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import './Historia.css'
 
 const Historia = () => {
@@ -29,7 +29,7 @@ const Historia = () => {
             <div className='kohteet'>
               <h2>Kohteet:</h2>
               <div>
-                <ul>
+                <ul className="kohteetUl">
                   <li>Oulun Ammattikorkeakoulu OAMK</li>
                   <li>Oulun seudun ammattiopisto OSAO</li>
                   <li>Ammattiopisto Luovi</li>

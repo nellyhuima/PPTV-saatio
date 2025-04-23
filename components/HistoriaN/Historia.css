@@ -1,8 +1,13 @@
+.historiaContent {
+    margin-top: 100px;
+}
+
 .osiot {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 60px;
 }
 
 .yleisesti {
@@ -10,6 +15,8 @@
     flex-direction: column;
     text-align: center;
     background-color: rgba(127, 118, 100, 0.7);
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .miksi {
@@ -17,11 +24,25 @@
     flex-direction: column;
     text-align: center;
     background-color: rgba(127, 118, 100, 0.7);
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .kohteet {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 300px;
     background-color: rgba(127, 118, 100, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+.kohteetUl {
+    padding-top: 20px;
+    color: white;
 }
