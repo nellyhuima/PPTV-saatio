@@ -1,4 +1,5 @@
 import React from 'react';
+import './OtaYhteytta';
 
 const OtaYhteytta = () => {
   return (
