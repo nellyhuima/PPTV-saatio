@@ -1,0 +1,13 @@
+.etusivu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etusivuQuote {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    padding-top: 60px;
+}

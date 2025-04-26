@@ -3,8 +3,11 @@ import './Etusivu.css';
 
 const Etusivu = () => {
   return (
-    <div className='etusivu'>
-      
+    <div className="etusivu">
+      <img src="/components/img/finalwhitelogo.png" alt='logo' height='300px'/>
+      <p className='etusivuQuote'>
+        "Opiskelijoiden tukena jo vuodesta 1993"
+      </p>
     </div>
   );
 };

@@ -5,18 +5,39 @@
 }
 
 .yleisesti {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     color: white;
+    align-items: center;
+}
+
+.yleisestiTeksti {
+    text-align: center;
 }
 
 .miksi {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     color: white;
+    align-items: center;
+}
+
+.miksiTeksti {
+    text-align: center;
 }
 
 .kohteet {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     color: white;
+    align-items: center;
+}
+
+.kohteetNimet {
+    text-align: center;
 }
 
 .historiaHeader {

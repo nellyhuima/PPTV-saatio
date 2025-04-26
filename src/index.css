@@ -15,6 +15,7 @@ html{
 }
 
 nav{
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
