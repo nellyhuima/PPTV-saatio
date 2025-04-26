@@ -3,6 +3,7 @@ import Historia from '../components/HistoriaN/Historia';
 import Hakemus from '../components/HakemusI/Hakemus';
 import UKK from '../components/UKKI/UKK';
 import OtaYhteytta from '../components/OtaYhteytta/OtaYhteytta';
+import Footer from '../components/FooterN/Footer'
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
       <div id="UKK"><UKK /></div>
       <div id="OtaYhteytta"><OtaYhteytta /></div>
 
-      <div id="Footer"><p>footer</p></div>
+      <div id="Footer"><Footer /></div>
     </>
   );
 };
