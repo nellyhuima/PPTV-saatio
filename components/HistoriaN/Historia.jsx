@@ -8,7 +8,7 @@ const Historia = () => {
         <h1>Säätiöstä</h1>
           <div className='osiot'>
             <div className='yleisesti'>
-              <h2>Yleisesti</h2>
+              <h2 className="historiaHeader">Yleisesti</h2>
               <p>
                 Pohjois- Pohjanmaan Toimihenkilö- ja Virkamiesjärjestöjen Säätiö (PPTV) on TVK:n 
                 Pohjois-Pohjanmaan Aluejärjestö ry:n 11.10.1994 perustama puoluepoliittisesti 
@@ -18,7 +18,7 @@ const Historia = () => {
               </p>
             </div>
             <div className='miksi'>
-              <h2>Miksi?</h2>
+              <h2 className="historiaHeader">Miksi?</h2>
               <p>
                 Säätiön tarkoituksena on edistää Pohjois-Pohjanmaan alueella ammatillista järjestäytymistä ja 
                 kiinnostusta ammattiyhdistystoimintaan opiskelujen aikana. Säätiö toteuttaa säädekirjan mukaista
@@ -27,19 +27,17 @@ const Historia = () => {
               </p>
             </div>
             <div className='kohteet'>
-              <h2>Kohteet:</h2>
+              <h2 className="historiaHeader">Kohteet:</h2>
               <div>
-                <ul className="kohteetUl">
-                  <li>Oulun Ammattikorkeakoulu OAMK</li>
-                  <li>Oulun seudun ammattiopisto OSAO</li>
-                  <li>Ammattiopisto Luovi</li>
-                  <li>Jokilaaksojen seudun ammattiopisto JEDU</li>
-                  <li>Suomen diakoniaopisto SDO Oulu</li>
-                  <li>Raahen porvari- ja kauppakoulu RPKK</li>
-                  <li>PSK-aikuisopisto Oulu</li>
-                  <li>Oulun PAlvelualanopisto OPAO</li>
-                  <li>Poliisiammattikorkeakoulu POLAMK Tampere</li>
-                </ul>
+                <p>Oulun Ammattikorkeakoulu OAMK</p>
+                <p>Oulun seudun ammattiopisto OSAO</p>
+                <p>Ammattiopisto Luovi</p>
+                <p>Jokilaaksojen seudun ammattiopisto JEDU</p>
+                <p>Suomen diakoniaopisto SDO Oulu</p>
+                <p>Raahen porvari- ja kauppakoulu RPKK</p>
+                <p>PSK-aikuisopisto Oulu</p>
+                <p>Oulun PAlvelualanopisto OPAO</p>
+                <p>Poliisiammattikorkeakoulu POLAMK Tampere</p>
               </div>
             </div>
           </div>
