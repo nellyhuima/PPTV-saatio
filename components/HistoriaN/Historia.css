@@ -1,45 +1,49 @@
-.osiot {
+.HistoriaContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.HistoriaHeader {
+    color: white;
+}
+
+.HistoriaContainers {
+    display: flex;
     justify-content: space-around;
 }
 
-.yleisesti {
+.HistoriaLeftContainer {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    color: white;
-    align-items: center;
 }
 
-.yleisestiTeksti {
-    text-align: center;
-}
-
-.miksi {
+.YleisestiDiv {
     display: flex;
     flex-direction: column;
-    width: 300px;
+}
+
+.Yleisesti {
     color: white;
-    align-items: center;
 }
 
-.miksiTeksti {
-    text-align: center;
-}
-
-.kohteet {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+.YleisestiTeksti {
     color: white;
-    align-items: center;
+    width: 500px;
 }
 
-.kohteetNimet {
-    text-align: center;
+.Miksi {
+    color: white;
 }
 
-.historiaHeader {
+.MiksiTeksti {
+    color: white;
+    width: 500px;
+}
+
+.KohteetDiv {
+    color: white;
+}
+.Kohteet {
     color: white;
 }
