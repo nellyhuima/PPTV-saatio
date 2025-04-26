@@ -27,6 +27,21 @@ h1 {
   font-size: 12px;
 }
 
+.question-opener{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 13px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+  font-weight: bold;
+}
+
+
 .answer {
   margin: 1.5em 0em 0em 1em;
   cursor:default;

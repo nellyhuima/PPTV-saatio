@@ -19,19 +19,22 @@ const UKK = () => {
   ];
 
   return (
-    <div className="ukkpohja">
-      <div className="ukkcontent">
-      <h1>Usein kysytyt kysymykset</h1>
-      <section className="faq">
+<div className="ukkpohja">
+  <div className="ukkcontent">
+    <h1>Usein kysytyt kysymykset</h1>
+    <section className="faq">
       {faqData.map((item, index) => (
-          <div className="question" key={index}>
-            <h3 onClick={() => toggleAnswer(index)}>{item.question}</h3>
-            {openIndex === index && <p className="answer">{item.answer}</p>}
+        <div className="question" key={index}>
+          <div className="question-opener" onClick={() => toggleAnswer(index)}>
+            <h3>{item.question}</h3>
+            <span className="icon">{openIndex === index ? <i className="fa-solid fa-caret-up"></i> : <i className="fa-solid fa-caret-down"></i>}</span>
           </div>
-        ))}
-      </section>
-      </div>
-    </div>
+          {openIndex === index && <p className="answer">{item.answer}</p>}
+        </div>
+      ))}
+    </section>
+  </div>
+</div>
   );
 };
 
