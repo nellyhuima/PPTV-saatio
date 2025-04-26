@@ -1,18 +1,14 @@
 .ukkpohja {
   margin: 4.5em 35em 10em 5em;
-  background-color: rgba(56, 78, 93, 0.7);
   display: flex;
   flex-direction: column;
-  height: 23.5em;
   padding: 0.8em;
-  border-radius: 10px;
 }
 
-h1 {
+.Hteksti {
   font-size: 28px;
-  margin: 0.5em 0em 1em 0em;
-  align-items: center;
-  text-align: center;
+  margin: 0.5em 0.5em 1em 0.5em;
+  color: white;
 }
 
 .question {

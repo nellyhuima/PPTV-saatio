@@ -1,0 +1,56 @@
+.YhteysLomake {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+  }
+
+  .YhteysText {
+    width:400px;
+    color: white;
+    margin-bottom: 1em;
+  }
+
+  .YhteysLabel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .Hteksti {
+    justify-content: center;
+    align-items: center;
+  }
+
+  input, textarea {
+    margin: 1em 1em 1em 0em;
+    font-size: 14px;
+    padding: 0.5em 3em 0.5em 0.5em;
+    width: 25em;
+    border-radius: 1px;
+    border: none;
+    background-color: rgb(235, 226, 217);
+  }
+
+  .Obutton {
+    padding: 10px 20px 10px 20px;
+    margin-top: 1em;
+    border-radius: 3px;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    align-self: center;
+  }
+
+  .confirmation {
+    margin-top: 1em;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }

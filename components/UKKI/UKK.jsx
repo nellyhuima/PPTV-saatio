@@ -21,7 +21,7 @@ const UKK = () => {
   return (
 <div className="ukkpohja">
   <div className="ukkcontent">
-    <h1>Usein kysytyt kysymykset</h1>
+    <h1 className='Hteksti'>Usein kysytyt kysymykset</h1>
     <section className="faq">
       {faqData.map((item, index) => (
         <div className="question" key={index}>
