@@ -32,8 +32,9 @@
     padding: 0.5em 3em 0.5em 0.5em;
     width: 25em;
     border-radius: 1px;
-    border: none;
-    background-color: rgb(235, 226, 217);
+    border: solid 1px rgb(152, 152, 152);
+    border-radius: 2px;
+    background-color: rgb(227, 227, 227);
   }
 
   .Obutton {
