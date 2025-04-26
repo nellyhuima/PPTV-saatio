@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Lomake.css'
 
 const Lomake = () => {
@@ -33,7 +33,7 @@ const Lomake = () => {
       });
 
       const [submitted, setSubmitted] = useState(false);
-    
+
       //saving data
       const handleChange = (e) => {
         setFormData({

@@ -1,0 +1,35 @@
+/* Inter Font */
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./Fraunces_72pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fraunces-Bold';
+  src: url('./Fraunces_72pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter_28pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('./Inter_28pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('./Inter_28pt-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}

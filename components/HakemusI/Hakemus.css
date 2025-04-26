@@ -9,8 +9,8 @@
 .lomakeContent {
     display: flex;
     flex-direction: column;
-align-items: center;
-    padding-top: 1em;
+    align-items: center;
+    padding-top: 2.5em;
 }
 
 .Htext {
@@ -29,9 +29,9 @@ align-items: center;
 .lomakebutton {
     display: flex;
     font-weight: bold;
-    padding: 20px 50px 20px 50px;
+    padding: 17px 50px 17px 50px;
     margin: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 3px;
     border: solid 1px white;
     background-color: transparent;

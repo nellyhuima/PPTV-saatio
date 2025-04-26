@@ -1,8 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from "./Home";
 import Lomake from '../components/Lomake/Lomake'; 
+import './assets/fonts/font.css';
 
 const App = () => {
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

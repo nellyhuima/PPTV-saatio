@@ -10,4 +10,20 @@
     font-size: 30px;
     color: white;
     padding-top: 60px;
+    font-family: 'Fraunces-Bold';
 }
+@media (max-width: 1024px) {
+    /* Styles for screens smaller than 768px */
+    img {
+        height:250px;
+        width: 440px;
+    }
+
+    .etusivuQuote {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    
+
+  }

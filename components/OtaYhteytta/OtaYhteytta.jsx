@@ -39,9 +39,9 @@ const OtaYhteytta = () => {
     <div className="view-content">
     <form className='YhteysLomake' onSubmit={handleSubmit}>
     <h1 className='Hteksti'>Ota yhteyttä</h1>
-    <p className='YhteysText'>Mikäli sinulla on kysyttävää, voit tällä lomakkeella lähettää viestin meille. Vastaamme sinulle pikimmiten!</p>
+    <p className='YhteysText'>Mikäli sinulla on kysyttävää, voit tällä lomakkeella lähettää meille viestin. Vastaamme sinulle pikimmiten!</p>
         <label className='YhteysLabel'>
-          <input
+          <input className='Oinput'
             type="text"
             name="name"
             value={formData.name || ''}
@@ -51,7 +51,7 @@ const OtaYhteytta = () => {
           />
         </label>
         <label className='YhteysLabel'>
-          <input
+          <input className='Oinput'
             type="email"
             name="email"
             value={formData.email || ''}
@@ -61,7 +61,7 @@ const OtaYhteytta = () => {
           />
         </label>
         <label className='YhteysLabel'>
-          <textarea
+          <textarea className='Otextarea'
             name="message"
             value={formData.message || ''}
             onChange={handleChange}

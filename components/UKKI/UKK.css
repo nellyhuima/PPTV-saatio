@@ -1,5 +1,5 @@
 .ukkpohja {
-  margin: 4.5em 35em 10em 5em;
+  margin: 3em 3em 0em 3em;
   display: flex;
   flex-direction: column;
   padding: 0.8em;
@@ -16,11 +16,13 @@
   cursor: pointer; 
   margin: 0.7em;
   cursor: pointer; 
-  background-color: #485F7F;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: rgba(72, 95, 127, 0.4);
+  padding: 11px;
+  border-radius: 2px;
+
   color: white;
   font-size: 12px;
+  width: 43%;
 }
 
 .question-opener{
@@ -33,6 +35,7 @@
 .icon {
   font-size: 13px;
   margin-left: 10px;
+  margin-right: 8px;
   transition: transform 0.3s;
   font-weight: bold;
 }
@@ -43,7 +46,6 @@
   cursor:default;
   border-radius: 5px;
   margin-top: 5px;
-  width: 15em;
   font-size: 12px;
   text-align: start;
   width: 85%;

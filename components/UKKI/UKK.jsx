@@ -11,8 +11,8 @@ const UKK = () => {
   };
 
   const faqData = [
-    { question: "Milloin stipendi hakemukset käsitellään?", answer: "Hakemukset käsitellään toukokuussa ja joulukuussa, juuri ennen valmistumistasi" },
     { question: "Kuka voi hakea stipendiä?", answer: "Seuraavien koulujen opsikelijat voivat hakea; " },
+    { question: "Milloin stipendi hakemukset käsitellään?", answer: "Hakemukset käsitellään toukokuussa ja joulukuussa, juuri ennen valmistumistasi" },
     { question: "Millä stipendin voi ansaita?", answer: "Ansiot ne ja nuo ja ne ja nuo" },
     { question: "Kuka olisi hyvä suosittelija?", answer: "suosittelija sieltä ja tuolta voi olla tämä ja tuo" },
     { question: "Mitä stipendi sisältää?", answer: "Rahasumma määräytyy hakijoiden määrän tai hallituksen päätöksen mukaisesti" },
