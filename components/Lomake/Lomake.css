@@ -14,12 +14,29 @@
     flex-direction: column;
   }
 
+  .palkki {
+   background-color: #ccc;
+    padding: 0px 7px 7px 7px;
+    margin: 2em 0em 2em 0em;
+    width: 76%;
+    border-radius: 3px;
+  }
+
+  .instructions {
+    margin: 2em;
+
+  }
+
   input, textarea {
     margin: 1em 1em 1em 0em;
     font-size: 14px;
     padding: 0.5em 3em 0.5em 0.5em;
     width: 25em;
     outline: none;
+  }
+
+  textarea {
+    height: 8em;
   }
 
   .view-content {
@@ -110,7 +127,7 @@
   }
   
   input:checked + .slider {
-    background-color: #2196f3;
+    background-color: #000000;
   }
   
   input:checked + .slider:before {

@@ -6,7 +6,6 @@
 }
 
 .Hteksti {
-  font-size: 28px;
   margin: 0.5em 0.5em 1em 0.5em;
   color: white;
 }
@@ -22,6 +21,7 @@
   color: white;
   font-size: 12px;
   width: 43%;
+  border: 1px solid rgba(76, 91, 112, 0.8);
 }
 
 .question-opener{
