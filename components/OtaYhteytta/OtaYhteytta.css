@@ -12,13 +12,14 @@
     font-size: 14px;
     justify-content: center;
     align-items: center;
-    margin-top: 4em;
+    margin-top: 6em;
   }
 
   .YhteysText {
     width:400px;
     color: white;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    font-size: 17px;
   }
 
   .YhteysLabel {
@@ -31,6 +32,7 @@
   .Hteksti {
     justify-content: center;
     align-items: center;
+    font-size: 34px;
   }
 
   .Oinput, .Otextarea {
@@ -55,7 +57,7 @@
     background-color: transparent;
     color: white;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
     align-self: center;
   }
 

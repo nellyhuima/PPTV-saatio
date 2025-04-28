@@ -1,5 +1,5 @@
 .ukkpohja {
-  margin: 3em 3em 0em 3em;
+  margin: 5em 3em 0em 3em;
   display: flex;
   flex-direction: column;
   padding: 0.8em;
@@ -8,6 +8,7 @@
 .Hteksti {
   margin: 0.5em 0.5em 1em 0.5em;
   color: white;
+  font-size: 34px;
 }
 
 .question {
@@ -16,10 +17,10 @@
   margin: 0.7em;
   cursor: pointer; 
   background-color: rgba(72, 95, 127, 0.4);
-  padding: 11px;
+  padding: 14px;
   border-radius: 2px;
   color: white;
-  font-size: 12px;
+  font-size: 19px;
   width: 43%;
   border: 1px solid rgba(76, 91, 112, 0.8);
 }
@@ -45,12 +46,11 @@
   cursor:default;
   border-radius: 5px;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 15px;
   text-align: start;
   width: 85%;
+  padding-top:1em;
 }
 
-p {
-  padding-top: 0.5em;
-}
+
 

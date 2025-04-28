@@ -26,7 +26,7 @@ const UKK = () => {
       {faqData.map((item, index) => (
         <div className="question" key={index}>
           <div className="question-opener" onClick={() => toggleAnswer(index)}>
-            <h3>{item.question}</h3>
+            <p>{item.question}</p>
             <span className="icon">{openIndex === index ? <i className="fa-solid fa-caret-up"></i> : <i className="fa-solid fa-caret-down"></i>}</span>
           </div>
           {openIndex === index && <p className="answer">{item.answer}</p>}
