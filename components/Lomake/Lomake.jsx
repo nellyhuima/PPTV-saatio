@@ -240,12 +240,15 @@ const Lomake = () => {
           />
         </label>
         <button className='Lbutton' type="submit">Lähetä</button>
+        {submitted && <p className="confirmation">Hakemus on lähetetty!</p>}
         </form>
       </div>
     ) : (
       <div className='view-content'>
+        <div className='instructions'>
         <h2 className='otsikko'>Hakemus</h2>
         <p className='kuvaus'>Tästä voit täyttää suosituksen stipendinhakijalle. Vaihdathan valikosta oletko stipendin hakija vai suosittelija!</p>
+        </div>
         <form onSubmit={handleSubmit}>
         <div className='palkki'><p>Suosittelijan tiedot</p></div>
         <label>
@@ -299,12 +302,13 @@ const Lomake = () => {
           />
         </label>
         <button className='Lbutton' type="submit">Lähetä</button>
+        {submitted && <p className="confirmation">Hakemus on lähetetty!</p>}
         </form>
 
       </div>
     )}
      </div>
-     {submitted && <p className="confirmation">Hakemus on lähetetty!</p>}
+
   </div>
 );
 };
