@@ -4,12 +4,9 @@ import './Historia.css'
 const Historia = () => {
   return (
     <div className="HistoriaContent">
-      
+      <h1 className="HeaderForHistoria">Säätiöstä</h1>
       <div className="HistoriaContainers">
-        <div className="HistoriaLeftContainer">
-        <div className="HistoriaHeader">
-        <h1 className="Säätiöstä">Säätiöstä</h1>
-      </div>
+        <div className="DivLeft">
           <div className="YleisestiDiv">
             <h2 className="Yleisesti">Yleisesti</h2>
             <p className="YleisestiTeksti">
@@ -20,7 +17,6 @@ const Historia = () => {
               puheenjohtaja, varapuheenjohtaja ja 10 jäsentä.
             </p>
           </div>
-
           <div className="MiksiDiv">
             <h2 className="Miksi">Miksi?</h2>
             <p className="MiksiTeksti">
@@ -31,18 +27,20 @@ const Historia = () => {
             </p>
           </div>
         </div>
-        <div className="historiaRightContainer">
+        <div className="DivRight">
           <div className="KohteetDiv">
             <h2 className="Kohteet">Kohteet</h2>
-            <p>Oulun Ammattikorkeakoulu OAMK</p>
-            <p>Oulun seudun ammattiopisto OSAO</p>
-            <p>Ammattiopisto Luovi</p>
-            <p>Jokilaaksojen seudun ammattiopisto JEDU</p>
-            <p>Suomen diakoniaopisto SDO Oulu</p>
-            <p>Raahen porvari- ja kauppakoulu RPKK</p>
-            <p>PSK-aikuisopisto Oulu</p>
-            <p>Oulun PAlvelualanopisto OPAO</p>
-            <p>Poliisiammattikorkeakoulu POLAMK Tampere</p>
+            <div className="KohteetList">
+              <p>Oulun Ammattikorkeakoulu OAMK</p>
+              <p>Oulun seudun ammattiopisto OSAO</p>
+              <p>Ammattiopisto Luovi</p>
+              <p>Jokilaaksojen seudun ammattiopisto JEDU</p>
+              <p>Suomen diakoniaopisto SDO Oulu</p>
+              <p>Raahen porvari- ja kauppakoulu RPKK</p>
+              <p>PSK-aikuisopisto Oulu</p>
+              <p>Oulun PAlvelualanopisto OPAO</p>
+              <p>Poliisiammattikorkeakoulu POLAMK Tampere</p>
+            </div>
           </div>
         </div>
       </div>
