@@ -1,6 +1,14 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
 
   form {
-    flex: 1;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -14,15 +22,36 @@
     flex-direction: column;
   }
 
+  .palkki {
+    background-color: #ccc;
+    padding: 7px 7px 7px 7px;
+    margin: 1em 0;
+    width: 70%;
+    border-radius: 3px;
+  }
+
+  .instructions {
+    margin: 2em;
+  }
+
   input, textarea {
     margin: 1em 1em 1em 0em;
     font-size: 14px;
-    padding: 0.5em 3em 0.5em 0.5em;
+    padding: 0.2em 3em 0.2em 0.2em;
     width: 25em;
     outline: none;
   }
 
+  textarea {
+    height: 8em;
+  }
+
   .view-content {
+    flex: 1;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
     margin-bottom: 2em;
   }
 
@@ -38,6 +67,7 @@
     color: green;
     font-weight: bold;
     text-align: center;
+      padding-bottom: 2em;
   }
 
 
@@ -48,6 +78,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 1em;
+    min-height: 100vh; 
   }
   
   .toggle-wrapper {
@@ -110,7 +141,7 @@
   }
   
   input:checked + .slider {
-    background-color: #2196f3;
+    background-color: #000000;
   }
   
   input:checked + .slider:before {

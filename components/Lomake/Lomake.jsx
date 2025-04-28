@@ -92,9 +92,12 @@ const Lomake = () => {
     <div className="view-content">
     {OpiskelijaView ? (
       <div className='view-content'>
+        <div className='instructions'>
         <h2>Hakemus</h2>
         <p className='kuvaus'>Tästä voit täyttää hakemuksen stipendille. Vaihdathan valikosta oletko stipendin hakija vai suosittelija!</p>
+        </div>
         <form onSubmit={handleSubmit}>
+        <div className='palkki'><p>Hakijan tiedot</p></div>
         <label>
           Nimi:
           <input
@@ -126,7 +129,7 @@ const Lomake = () => {
           />
         </label>
         <label>
-          Postinumero/-paikka
+          Postinumero/-paikka:
           <input
             type="text"
             name="postinro"
@@ -155,6 +158,17 @@ const Lomake = () => {
             required
           />
         </label>
+        <label>
+          Tilinumero stipendin toimittamiseen:
+          <input
+            type="text"
+            name="tilinumero"
+            value={formData.tilinumero || ''}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <div className='palkki'><p>Koulutus</p></div>
         <label>
           Oppilaitos:
           <input
@@ -205,18 +219,9 @@ const Lomake = () => {
             required
           />
         </label>
+        <div className='palkki'><p>Perustelut</p></div>
         <label>
-          Tilinumero stipendin toimittamiseen
-          <input
-            type="text"
-            name="tilinumero"
-            value={formData.tilinumero || ''}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Omat perustelut hakemukselle
+          Omat perustelut hakemukselle:
           <textarea
             name="message"
             value={formData.message || ''}
@@ -235,13 +240,17 @@ const Lomake = () => {
           />
         </label>
         <button className='Lbutton' type="submit">Lähetä</button>
+        {submitted && <p className="confirmation">Hakemus on lähetetty!</p>}
         </form>
       </div>
     ) : (
       <div className='view-content'>
+        <div className='instructions'>
         <h2 className='otsikko'>Hakemus</h2>
         <p className='kuvaus'>Tästä voit täyttää suosituksen stipendinhakijalle. Vaihdathan valikosta oletko stipendin hakija vai suosittelija!</p>
+        </div>
         <form onSubmit={handleSubmit}>
+        <div className='palkki'><p>Suosittelijan tiedot</p></div>
         <label>
           Nimi/yhdistys/oppilaskunta:
           <input
@@ -262,8 +271,19 @@ const Lomake = () => {
             required
           />
         </label>
+        <div className='palkki'><p>Perustelut</p></div>
         <label>
-          Perustelut suositukselle
+          Suositeltava henkilö:
+          <input
+            type="text"
+            name="name"
+            value={formData.name || ''}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Perustelut suositukselle:
           <textarea
             name="Sperustelu"
             value={formData.Sperustelu || ''}
@@ -282,12 +302,13 @@ const Lomake = () => {
           />
         </label>
         <button className='Lbutton' type="submit">Lähetä</button>
+        {submitted && <p className="confirmation">Hakemus on lähetetty!</p>}
         </form>
 
       </div>
     )}
      </div>
-     {submitted && <p className="confirmation">Hakemus on lähetetty!</p>}
+
   </div>
 );
 };

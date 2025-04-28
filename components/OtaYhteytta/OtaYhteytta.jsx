@@ -40,6 +40,7 @@ const OtaYhteytta = () => {
     <form className='YhteysLomake' onSubmit={handleSubmit}>
     <h1 className='Hteksti'>Ota yhteyttä</h1>
     <p className='YhteysText'>Mikäli sinulla on kysyttävää, voit tällä lomakkeella lähettää meille viestin. Vastaamme sinulle pikimmiten!</p>
+  
         <label className='YhteysLabel'>
           <input className='Oinput'
             type="text"
