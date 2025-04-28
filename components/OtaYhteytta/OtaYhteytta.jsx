@@ -42,12 +42,12 @@ const OtaYhteytta = () => {
     <p className='YhteysText'>Mikäli sinulla on kysyttävää, voit tällä lomakkeella lähettää meille viestin. Vastaamme sinulle pikimmiten!</p>
   
         <label className='YhteysLabel'>
+          Nimi:
           <input className='Oinput'
             type="text"
             name="name"
             value={formData.name || ''}
             onChange={handleChange}
-            placeholder='Nimi'
             required
           />
         </label>
