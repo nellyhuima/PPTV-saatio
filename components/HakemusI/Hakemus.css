@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     height:24em;
-    margin-top: 5em;
+    margin-top: 6em;
 
 }
 
@@ -14,12 +14,14 @@
 }
 
 .Htext {
-    width: 400px;
+    width: 450px;
     color: white;
+    font-size: 34px;
 }
 
 .text {
-    width: 400px;
+    width: 450px;
+    font-size: 22px;
     margin: 0em 3em 0em 3em;
     padding-bottom: 1em;
     color: white;
@@ -29,7 +31,7 @@
 .lomakebutton {
     display: flex;
     font-weight: bold;
-    padding: 17px 50px 17px 50px;
+    padding: 20px 54px 20px 54px;
     margin: 5px;
     margin-top: 20px;
     border-radius: 3px;
@@ -37,7 +39,7 @@
     background-color: transparent;
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     align-self: center;
     font-family: 'Inter';
 

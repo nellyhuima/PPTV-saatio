@@ -9,21 +9,67 @@
     font-weight: bold;
     font-size: 30px;
     color: white;
-    padding-top: 60px;
     font-family: 'Fraunces-Bold';
 }
-@media (max-width: 1024px) {
-    /* Styles for screens smaller than 768px */
+
+
+  
+/* (small phones) */
+@media (max-width: 320px) { 
+    .etusivuQuote {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .etusivu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  /* (medium phones) */
+  @media (max-width: 375px) { 
+    .etusivuQuote {
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  }
+  
+  /*  (tablets) */
+  @media (max-width: 768px) { 
+    .etusivuQuote {
+        margin: 0 1.2em;
+        text-align: center;
+    }
+  }
+  
+  
+  /*(laptops) */
+  @media (max-width: 1024px) { 
     img {
-        height:250px;
-        width: 440px;
+        height:300px;
+        width: 480px;
+        margin-top: 10em;
     }
 
     .etusivuQuote {
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 5em;
     }
-
-    
-
   }
+  
+  /*(large laptop) */
+  @media (max-width: 1440px) { 
+    /* styles */
+  }
+
+/*(4k screens) */
+    @media (max-width: 2560px) { 
+        .etusivuQuote {
+            font-size: 40px;
+        }
+      }
+
