@@ -5,7 +5,7 @@ const Footer = () => {
 
   useEffect(() => {
     const modal = document.getElementById("myModal");
-    const btn = document.getElementById("myBtn");
+    const btn = document.getElementById("TietosuojaselosteBtn");
     const span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function() {
