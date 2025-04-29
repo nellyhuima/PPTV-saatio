@@ -52,21 +52,23 @@ const OtaYhteytta = () => {
           />
         </label>
         <label className='YhteysLabel'>
+          Sähköposti:
           <input className='Oinput'
             type="email"
             name="email"
             value={formData.email || ''}
             onChange={handleChange}
-            placeholder='Sähköposti'
+          
             required
           />
         </label>
         <label className='YhteysLabel'>
+          Viesti:
           <textarea className='Otextarea'
             name="message"
             value={formData.message || ''}
             onChange={handleChange}
-            placeholder='Viesti'
+            
             required
           />
         </label>

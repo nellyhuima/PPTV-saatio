@@ -22,10 +22,9 @@
 .text {
     width: 450px;
     font-size: 22px;
-    margin: 0em 3em 0em 3em;
+    margin: 1em 3em 0em 3em;
     padding-bottom: 1em;
     color: white;
-    text-align: start;
 }
 
 .lomakebutton {
@@ -41,5 +40,6 @@
     cursor: pointer;
     font-size: 20px;
     font-family: 'Inter';
-
+    align-self: flex-start;
+    margin-left: 4em;
 }

@@ -8,9 +8,7 @@
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6em;
+    margin-top: 5em;
   }
 
   .YhteysText {
@@ -18,7 +16,7 @@
     color: white;
     margin-bottom: 0.5em;
     font-size: 17px;
-    text-align: center;
+    text-align:center;
   }
 
   .YhteysLabel {
@@ -29,34 +27,28 @@
   }
 
   .Hteksti {
-    justify-content: center;
-    align-items: center;
     font-size: 34px;
   }
 
   .Oinput, .Otextarea {
-    margin: 1em 1em 1em 0em;
+    margin: 0.5em 1em 1em 0em;
     font-size: 14px;
     padding: 0.5em 3em 0.5em 0.5em;
     width: 25em;
-    border-radius: 1px;
-    border: none;
-    border-radius: 2px;
-    background-color: rgb(37, 37, 37);
+    border: 2px solid rgb(113, 99, 99);
+    border-radius: 3px;
+    background-color:  rgba(67, 59, 59, 0.8);
     outline: none;
-    color: white;
+    color: rgb(255, 255, 255);
   }
-
-
-
 
   .Obutton {
     padding: 10px 20px 10px 20px;
     margin-top: 1em;
     border-radius: 3px;
-    border: solid 1px white;
-    background-color: transparent;
-    color: white;
+    background-color:  rgb(104, 92, 92);
+    border: none;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 16px;
     align-self: center;
