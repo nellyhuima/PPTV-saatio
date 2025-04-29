@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <div className='FooterContent'>
       <img src="/components/img/finalwhitelogo.png" alt='logo' height='116.6px' width='200px'/>
-      <button id="myBtn">Open Modal</button>
+      <button id="TietosuojaselosteBtn">Tietosuojaseloste</button>
       <div id="myModal" className="modal">
         <div className="modal-content">
           <span className="close">&times;</span>
