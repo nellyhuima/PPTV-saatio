@@ -4,7 +4,7 @@ import './Historia.css'
 const Historia = () => {
   return (
     <div className="HistoriaContent">
-      <h1 className="HeaderForHistoria">Säätiöstä</h1>
+      <h1 className="HeaderForHistoria">Tietoa säätiöstä</h1>
       <div className="HistoriaContainers">
         <div className="DivLeft">
           <div className="YleisestiDiv">
@@ -17,17 +17,6 @@ const Historia = () => {
               puheenjohtaja, varapuheenjohtaja ja 10 jäsentä.
             </p>
           </div>
-          <div className="MiksiDiv">
-            <h2 className="Miksi">Miksi?</h2>
-            <p className="MiksiTeksti">
-              Säätiön tarkoituksena on edistää Pohjois-Pohjanmaan alueella ammatillista järjestäytymistä ja 
-              kiinnostusta ammattiyhdistystoimintaan opiskelujen aikana. Säätiö toteuttaa säädekirjan mukaista
-              tarkoitustaan mm jakamalla stipendejä järjestöllisesti aktiivisille oppilaskunnan jäsenille, vertaistukiohjaajan
-              ja tuutortyöstä suositusten mukaan.
-            </p>
-          </div>
-        </div>
-        <div className="DivRight">
           <div className="KohteetDiv">
             <h2 className="Kohteet">Kohteet</h2>
             <div className="KohteetList">
@@ -41,6 +30,17 @@ const Historia = () => {
               <p>Oulun PAlvelualanopisto OPAO</p>
               <p>Poliisiammattikorkeakoulu POLAMK Tampere</p>
             </div>
+          </div>
+        </div>
+        <div className="DivRight">
+        <div className="MiksiDiv">
+            <h2 className="Miksi">Miksi?</h2>
+            <p className="MiksiTeksti">
+              Säätiön tarkoituksena on edistää Pohjois-Pohjanmaan alueella ammatillista järjestäytymistä ja 
+              kiinnostusta ammattiyhdistystoimintaan opiskelujen aikana. Säätiö toteuttaa säädekirjan mukaista
+              tarkoitustaan mm jakamalla stipendejä järjestöllisesti aktiivisille oppilaskunnan jäsenille, vertaistukiohjaajan
+              ja tuutortyöstä suositusten mukaan.
+            </p>
           </div>
         </div>
       </div>

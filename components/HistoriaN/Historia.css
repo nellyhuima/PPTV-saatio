@@ -1,13 +1,14 @@
 .HistoriaContent {
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: 5em;
 }
 
 .HeaderForHistoria {
     display: flex;
     justify-content: center;
     color: white;
+    font-size: 44px;
 }
 
 .HistoriaContainers {
@@ -16,22 +17,33 @@
 }
 
 .DivLeft {
-    width: 600px;
+    width: 50%;
+    margin: 0em 1em 1em 4em;
+    padding-left: 10em;
+}
+
+.DivRight {
+    width: 50%;
+    margin: 0em 1em 1em 1em;
+    padding-right: 10em;
 }
 
 .Yleisesti {
     color: white;
-    text-decoration: underline;
+    font-size: 34px;
+    margin-bottom: 0.5em;
 }
 
 .YleisestiTeksti {
     font-size: 22px;
     color: white;
+
 }
 
 .Miksi {
     color: white;
-    text-decoration: underline;
+    font-size: 34px;
+    margin-bottom: 0.5em;
 }
 
 .MiksiTeksti {
@@ -41,7 +53,8 @@
 
 .Kohteet {
     color: white;
-    text-decoration: underline;
+    font-size: 34px;
+    margin-bottom: 0.5em;
 }
 
 .KohteetList {
