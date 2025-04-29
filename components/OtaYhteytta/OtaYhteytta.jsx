@@ -1,81 +1,55 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './OtaYhteytta.css';
 
 const OtaYhteytta = () => {
-  //data handling
-    const [formData, setFormData] = useState({
-          name: '',
-          email: '',
-          message: '',
-        });
 
-         const [submitted, setSubmitted] = useState(false);
+  const form = useRef();
 
-        //saving data
-      const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-          });
-        };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-        const handleSubmit = (e) => {
-          e.preventDefault();
-          console.log("Submitted data:", formData);
+    emailjs
+      .sendForm(
+      "service_gcbeg44",
+      "template_ojkkszq", 
+      form.current, 
+      "MU7GSqKNFAaG76JpS"
+      )
 
-           // Reset the form
-        setFormData({
-         name: '',
-         email: '',
-         message: '',
-        });
-        setSubmitted(true);
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
-        //time that the message is shown
-      setTimeout(() => setSubmitted(false), 4000);
-
-        }
   return (
-    <div className="view-content">
-    <form className='YhteysLomake' onSubmit={handleSubmit}>
-    <h1 className='Hteksti'>Ota yhteyttä</h1>
-    <p className='YhteysText'>Mikäli sinulla on kysyttävää, voit tällä lomakkeella lähettää meille viestin. Vastaamme sinulle pikimmiten!</p>
-  
-        <label className='YhteysLabel'>
-          Nimi:
-          <input className='Oinput'
-            type="text"
-            name="name"
-            value={formData.name || ''}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label className='YhteysLabel'>
-          Sähköposti:
-          <input className='Oinput'
-            type="email"
-            name="email"
-            value={formData.email || ''}
-            onChange={handleChange}
-          
-            required
-          />
-        </label>
-        <label className='YhteysLabel'>
-          Viesti:
-          <textarea className='Otextarea'
-            name="message"
-            value={formData.message || ''}
-            onChange={handleChange}
-            
-            required
-          />
-        </label>
-        
-        <button className='Obutton' type="submit">Lähetä</button>
+    <div className='YhteysLomake'>
+      <div className='Ohjeet'>
+        <h1 className='Hteksti'>Ota yhteyttä</h1>
+        <p className='YhteysText'>
+          Mikäli sinulla on kysyttävää, 
+          voit tällä lomakkeella lähettää meille viestin.
+          Vastaamme sinulle pikimmiten!
+        </p>
+      </div>
+      <div className=''>
+        <form ref={form} onSubmit={sendEmail}>
+          <label className='YhteysLabel'>Name</label>
+          <input className='Oinput' type="text" name="user_name" />
+          <label className='YhteysLabel'>Email</label>
+          <input className='Oinput' type="email" name="user_email" />
+          <label className='YhteysLabel'>Viesti</label>
+          <textarea className='Otextarea' name="message" />
+          <input className='Obutton' type="submit" value="Lähetä" />
         </form>
-        </div>
+      </div>
+    </div>
   );
 };
 
