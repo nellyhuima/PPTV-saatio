@@ -2,6 +2,7 @@ import React from "react";
 import './Historia.css'
 
 const Historia = () => {
+
   return (
     <div className="HistoriaContent">
       <h1 className="HeaderForHistoria">Tietoa säätiöstä</h1>
@@ -17,20 +18,7 @@ const Historia = () => {
               puheenjohtaja, varapuheenjohtaja ja 10 jäsentä.
             </p>
           </div>
-          <div className="KohteetDiv">
-            <h2 className="Kohteet">Kohteet</h2>
-            <div className="KohteetList">
-              <p>Oulun Ammattikorkeakoulu OAMK</p>
-              <p>Oulun seudun ammattiopisto OSAO</p>
-              <p>Ammattiopisto Luovi</p>
-              <p>Jokilaaksojen seudun ammattiopisto JEDU</p>
-              <p>Suomen diakoniaopisto SDO Oulu</p>
-              <p>Raahen porvari- ja kauppakoulu RPKK</p>
-              <p>PSK-aikuisopisto Oulu</p>
-              <p>Oulun PAlvelualanopisto OPAO</p>
-              <p>Poliisiammattikorkeakoulu POLAMK Tampere</p>
-            </div>
-          </div>
+         
         </div>
         <div className="DivRight">
         <div className="MiksiDiv">

@@ -3,20 +3,18 @@
     justify-content: center;
     height:24em;
     margin-top: 6em;
-
 }
 
 .lomakeContent {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 2.5em;
 }
 
 .Htext {
-    width: 450px;
+    width: 54%;
     color: white;
     font-size: 44px;
+    text-align: center;
 }
 
 .text {
@@ -25,6 +23,14 @@
     margin: 1em 3em 0em 3em;
     padding-bottom: 1em;
     color: white;
+}
+
+
+
+.Hfaq {
+    max-width: 450px;
+    justify-content: center;
+    margin-top: 2.5em;
 }
 
 .lomakebutton {
@@ -41,5 +47,43 @@
     font-size: 20px;
     font-family: 'Inter';
     align-self: flex-start;
-    margin-left: 4em;
+    margin-left: 3.3em;
 }
+
+
+.Hquestion {
+    cursor: pointer; 
+    margin: 0.7em;
+    cursor: pointer; 
+    padding: 14px;
+    border-radius: 2px;
+    color: white;
+    font-size: 19px;
+    width: 20em;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .Hquestion-opener{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .Hicon {
+    font-size: 13px;
+    transition: transform 0.3s;
+    font-weight: bold;
+    padding-left: 10em;
+  }
+  
+  
+  .Hanswer {
+    margin: 0em 0em 0.5em 1em;
+    cursor:default;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: start;
+    width: 20em;
+    padding-top:1em;
+  }
