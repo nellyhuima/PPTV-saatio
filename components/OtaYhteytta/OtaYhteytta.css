@@ -18,6 +18,7 @@
     color: white;
     margin-bottom: 0.5em;
     font-size: 17px;
+    text-align: center;
   }
 
   .YhteysLabel {
@@ -39,12 +40,14 @@
     padding: 0.5em 3em 0.5em 0.5em;
     width: 25em;
     border-radius: 1px;
-    border: solid 1px rgb(152, 152, 152);
+    border: none;
     border-radius: 2px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(37, 37, 37);
     outline: none;
-
+    color: white;
   }
+
+
 
 
   .Obutton {
