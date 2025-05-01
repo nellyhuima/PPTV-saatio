@@ -24,8 +24,8 @@ Raahen porvari- ja kauppakoulu RPKK
 PSK-aikuisopisto Oulu
 Oulun Palvelualanopisto OPAO
 Poliisiammattikorkeakoulu POLAMK Tampere` },
-       { question: "Ohje hakijalle", answer: 'vastaus'},
-       { question: "Ohje suosittelijalle", answer: 'vastaus'},
+       { question: "Ohje hakijalle", answer: 'Tähän tulee ohje hakijalle hakemuksen täyttämiseen.'},
+       { question: "Ohje suosittelijalle", answer: 'Tähän tulee ohje Suosittelijalle hakemuksen täyttämiseen.'},
       ];
    
   return (

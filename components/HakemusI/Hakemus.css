@@ -7,7 +7,7 @@
 
 .lomakeContent {
     flex-direction: column;
-    padding-top: 2.5em;
+    padding-top: 5em;
 }
 
 .Htext {
@@ -15,6 +15,7 @@
     color: white;
     font-size: 44px;
     text-align: center;
+    font-family: 'Funnel';
 }
 
 .text {
@@ -30,7 +31,7 @@
 .Hfaq {
     max-width: 450px;
     justify-content: center;
-    margin-top: 2.5em;
+    margin-top: 7em;
 }
 
 .lomakebutton {
@@ -41,13 +42,17 @@
     margin-top: 20px;
     border-radius: 3px;
     border: solid 1px white;
-    background-color: transparent;
     color: white;
+    background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
     font-size: 20px;
     font-family: 'Inter';
     align-self: flex-start;
     margin-left: 3.3em;
+}
+
+.lomakebutton:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -61,6 +66,7 @@
     font-size: 19px;
     width: 20em;
     border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   
   .Hquestion-opener{

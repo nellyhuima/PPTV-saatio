@@ -1,17 +1,25 @@
 /* Inter Font */
 @font-face {
-  font-family: 'Fraunces';
-  src: url('./Fraunces_72pt-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Funnel-bold';
+  src: url('./FunnelDisplay-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Fraunces-Bold';
-  src: url('./Fraunces_72pt-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'Funnel';
+  src: url('./FunnelDisplay-Bold.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Funnel-light';
+  src: url('./FunnelDisplay-Regular.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Inter';

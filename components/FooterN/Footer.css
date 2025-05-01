@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1.5em;
 }
 
 .modal {
@@ -18,8 +19,8 @@
   }
   
   .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
+    background-color: #e6e6e6;
+    margin: 5em;
     padding: 50px;
     border: 1px solid #888;
     width: 80%;

@@ -1,7 +1,7 @@
 .HistoriaContent {
     display: flex;
     flex-direction: column;
-    padding-top: 5em;
+    padding-top: 8em;
 }
 
 .HeaderForHistoria {
@@ -9,6 +9,7 @@
     justify-content: center;
     color: white;
     font-size: 44px;
+    font-family: 'Funnel';
 }
 
 .HistoriaContainers {
@@ -17,21 +18,22 @@
 }
 
 .DivLeft {
-    width: 50%;
+    width: 60%;
     margin: 0em 1em 1em 3.5em;
-    padding-left: 9em;
+    padding-left: 12em;
 }
 
 .DivRight {
-    width: 50%;
+    width: 60%;
     margin: 0em 1em 1em 2.5em;
-    padding-right: 9em;
+    padding-right: 12em;
 }
 
 .Yleisesti {
     color: white;
-    font-size: 34px;
+    font-size: 40px;
     margin-bottom: 0.5em;
+    font-family: 'Funnel';
 }
 
 .YleisestiTeksti {
@@ -42,8 +44,9 @@
 
 .Miksi {
     color: white;
-    font-size: 34px;
+    font-size: 40px;
     margin-bottom: 0.5em;
+    font-family: 'Funnel';
 }
 
 .MiksiTeksti {

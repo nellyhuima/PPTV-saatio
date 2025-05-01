@@ -38,14 +38,14 @@ const OtaYhteytta = () => {
           Vastaamme sinulle pikimmiten!
         </p>
       </div>
-      <div className=''>
+      <div className='Oform'>
         <form ref={form} onSubmit={sendEmail}>
-          <label className='YhteysLabel'>Name</label>
-          <input className='Oinput' type="text" name="user_name" />
-          <label className='YhteysLabel'>Email</label>
-          <input className='Oinput' type="email" name="user_email" />
-          <label className='YhteysLabel'>Viesti</label>
-          <textarea className='Otextarea' name="message" />
+          <label className='YhteysLabel'></label>
+          <input className='Oinput' placeholder='Nimi' type="text" name="user_name" />
+          <label className='YhteysLabel'></label>
+          <input className='Oinput'placeholder='Sähköposti' type="email" name="user_email" />
+          <label className='YhteysLabel'></label>
+          <textarea className='Otextarea' placeholder='Viesti' name="message" />
           <input className='Obutton' type="submit" value="Lähetä" />
         </form>
       </div>

@@ -1,15 +1,16 @@
 .ukkpohja {
-  margin: 5em 3em 0em 3em;
+  margin: 7em 3em 0em 3em;
   display: flex;
   flex-direction: column;
   padding: 0.8em;
   padding-left: 8em;
 }
 
-.Hteksti {
-  margin: 0.5em 0.5em 1em 0.5em;
+.Htekst {
+  margin: 0.5em 0.5em 1em 0.2em;
   color: white;
-  font-size: 38px;
+  font-size: 44px;
+  font-family: 'Funnel';
 }
 
 .question {
@@ -17,13 +18,13 @@
   cursor: pointer; 
   margin: 0.7em;
   cursor: pointer; 
-  background-color: rgba(72, 95, 127, 0.4);
   padding: 14px;
   border-radius: 2px;
   color: white;
-  font-size: 19px;
+  font-size: 22px;
   width: 43%;
-  border: 1px solid rgba(76, 91, 112, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .question-opener{
@@ -43,11 +44,10 @@
 
 
 .answer {
-  margin: 1.5em 0em 0em 1em;
+  margin: 0.5em 0em 1em 1em;
   cursor:default;
   border-radius: 5px;
-  margin-top: 5px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: start;
   width: 85%;
   padding-top:1em;

@@ -6,7 +6,6 @@ html{
 *{
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -18,14 +17,14 @@ html{
 nav{
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 ul{
     list-style: none;
@@ -42,14 +41,34 @@ a{
     display: block;
     text-decoration: none;
     color: #ffff;
-    font-size: 20px;
+    font-size: 22px;
 }
+
+.nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .nav-link.active::after {
+    width: 80%;
+  }
 
 #Etusivu{
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-    background-image: url('../components/img/tummaetusivu.png');
+    background-image: url('../components/img/tummaetusivu3.png');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -95,7 +114,7 @@ a{
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-    background-image: url('../components/img/tummaotayhteytta.png');
+    background-image: url('../components/img/tummayhteytta2.png');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -104,8 +123,8 @@ a{
 
 #Footer{
     max-width: 100%;
-    height: 125px;
-    background: rgb(0, 0, 0);
+    height: 175px;
+    background: rgb(43, 43, 43);
     display: inline-block;
     width: 100vw;
 }
@@ -125,7 +144,7 @@ a{
 @media (max-width: 1024px) {
     /* Styles for screens smaller than 768px */
     a {
-      font-size: 12px;
+      font-size: 14px;
       margin: 15px 18px 15px 18px;
     }
 
@@ -141,13 +160,13 @@ a{
   @media (max-width: 1440px) {
   
     a {
-      font-size: 14px;
-      margin: 15px 18px 15px 18px;
+      font-size: 16px;
+      padding: 17px 20px 17px 20px;
     }
 
     nav {
         width: 100%;
-        height: 1.5em;
+        height: 1.7em;
         display: flex;
         justify-content: center;
         align-items: center;
