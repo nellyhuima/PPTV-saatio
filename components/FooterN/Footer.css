@@ -49,3 +49,7 @@
 	cursor: pointer;
 	outline: inherit;
   }
+
+  #TietosuojaselosteBtn:hover {
+    color: #dadada;
+  }
