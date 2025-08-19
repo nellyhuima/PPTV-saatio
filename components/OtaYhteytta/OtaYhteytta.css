@@ -64,3 +64,19 @@
   .Obutton:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
+
+  @media (min-width: 1200px) {
+  .Hteksti { font-size: 52px; }
+  .YhteysText { width: 600px; font-size: 22px; }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .YhteysText { width: 90%; font-size: 18px; }
+}
+
+@media (max-width: 767px) {
+  .Hteksti { font-size: 28px; text-align: center; }
+  .YhteysText { width: 100%; font-size: 16px; }
+  .Oinput, .Otextarea { width: 100%; }
+  .Obutton { width: 100%; font-size: 18px; }
+}

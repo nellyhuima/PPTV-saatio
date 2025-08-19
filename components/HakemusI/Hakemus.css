@@ -93,3 +93,21 @@
     width: 20em;
     padding-top:1em;
   }
+
+  @media (min-width: 1200px) {
+  .Htext { font-size: 52px; }
+  .text { font-size: 24px; width: 600px; }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .lomake { flex-direction: row; }
+  .Htext { font-size: 36px; width: 70%; }
+  .text { font-size: 20px; width: 80%; }
+}
+
+@media (max-width: 767px) {
+  .lomake { flex-direction: column; height: auto; }
+  .Htext { font-size: 26px; width: 100%; text-align: center; }
+  .text { width: 95%; font-size: 18px; }
+  .lomakebutton { align-self: center; width: 100%; }
+}

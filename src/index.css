@@ -127,48 +127,116 @@ a{
     display: inline-block;
     width: 100vw;
 }
-  /* (medium phones) */
-  @media (max-width: 375px) { 
-    #Etusivu{
-        background-attachment: fixed;
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-attachment: scroll;
 
-    }
+/* Hamburger-painike, piilotetaan desktopilla */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  z-index: 1001;
+}
 
+/* Nav-links oletus */
+.nav-links {
+  display: flex;
+  gap: 1em;
+}
+
+/* MOBIILI */
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block;
   }
 
-@media (max-width: 1024px) {
-    /* Styles for screens smaller than 768px */
-    a {
-      font-size: 14px;
-      margin: 15px 18px 15px 18px;
-    }
-
-    nav {
-        width: 100%;
-        height: 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+  .nav-links {
+    display: none; /* piilossa oletuksena */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 1.5em;
+    border-radius: 8px 0 0 8px;
+    z-index: 1000;
   }
-  @media (max-width: 1440px) {
-  
-    a {
-      font-size: 16px;
-      padding: 17px 20px 17px 20px;
-    }
 
-    nav {
-        width: 100%;
-        height: 1.7em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+  .nav-links.show {
+    display: flex;
   }
+
+  .nav-links li {
+    margin: 1em 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* ISOT NÄYTÖT (≥ 1200px) */
+@media (min-width: 1200px) {
+  a {
+    font-size: 20px; /* isoilla näytöillä */
+    margin: 12px;
+  }
+}
+
+/* LÄPPÄRIT & TABLETIT (768px – 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+  a {
+    font-size: 16px;   
+    margin: 6px;       
+  }
+}
+
+/* MOBIILI (≤ 767px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  li {
+    float: none;
+  }
+
+  a {
+    font-size: 14px;   /* sopiva mobiiliin */
+    margin: 5px 0;
+    padding: 8px;
+  }
+
+  #Etusivu,
+  #Historia,
+  #Hakemus,
+  #UKK,
+  #OtaYhteytta {
+    height: auto;
+    min-height: 100vh;
+    padding: 4em 1em;
+  }
+
+  #Footer {
+    height: auto;
+    padding: 2em 1em;
+    text-align: center;
+  }
+}

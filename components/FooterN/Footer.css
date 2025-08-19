@@ -53,3 +53,24 @@
   #TietosuojaselosteBtn:hover {
     color: #dadada;
   }
+
+  @media (min-width: 1200px) {
+  .FooterContent { padding: 2em 8em; }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .FooterContent { justify-content: space-between; }
+}
+
+@media (max-width: 767px) {
+  .FooterContent {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+  .modal-content {
+    width: 95%;
+    margin: 2em auto;
+    padding: 1em;
+  }
+}

@@ -4,13 +4,14 @@ import Historia from '../components/HistoriaN/Historia';
 import Hakemus from '../components/HakemusI/Hakemus';
 import UKK from '../components/UKKI/UKK';
 import OtaYhteytta from '../components/OtaYhteytta/OtaYhteytta';
-import Footer from '../components/FooterN/Footer'
+import Footer from '../components/FooterN/Footer';
 import CookieAlert from '../components/CookieAlert/CookieAlert';
 
 const sections = ['Etusivu', 'Historia', 'Hakemus', 'UKK', 'OtaYhteytta'];
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState('');
+  const [open, setOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,19 +34,31 @@ const Home = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   return (
     <>
-          <CookieAlert />
+      <CookieAlert />
+      
       <div className="navbar">
         <nav>
-        <ul>
+          {/* Hamburger-painike mobiilissa */}
+          <button
+            className="menu-toggle"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? "✖" : "☰"}
+          </button>
+
+          {/* Linkit */}
+          <ul className={`nav-links ${open ? "show" : ""}`}>
             {sections.map((id) => (
               <li key={id}>
                 <a
                   href={`#${id}`}
-                  className={`nav-link ${activeSection === id ? 'active' : ''}`}
+                  className={`nav-link ${activeSection === id ? "active" : ""}`}
+                  onClick={() => setOpen(false)} // sulkee menun klikattaessa
                 >
-                  {id === 'OtaYhteytta' ? 'Ota yhteyttä' : id}
+                  {id === "OtaYhteytta" ? "Ota yhteyttä" : id}
                 </a>
               </li>
             ))}
@@ -53,15 +66,14 @@ const Home = () => {
         </nav>
       </div>
 
+      {/* Sivun osiot */}
       <div id="Etusivu"><Etusivu /></div>
       <div id="Historia"><Historia /></div>
       <div id="Hakemus"><Hakemus /></div>
       <div id="UKK"><UKK /></div>
       <div id="OtaYhteytta"><OtaYhteytta /></div>
       <div id="Footer"><Footer /></div>
-    
     </>
-    
   );
 };
 
