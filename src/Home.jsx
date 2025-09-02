@@ -10,55 +10,63 @@ import CookieAlert from '../components/CookieAlert/CookieAlert';
 const sections = ['Etusivu', 'Yleista', 'Hakemus', 'UKK', 'OtaYhteytta'];
 
 const Home = () => {
-  const [activeSection, setActiveSection] = useState('');
-  const [open, setOpen] = useState(false); 
+  const [activeSection, setActiveSection] = useState(sections[0]);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  // Seuraa scrollia ja aseta aktiivinen osio
   useEffect(() => {
     const handleScroll = () => {
-      let current = '';
+      const scrollMiddle = window.scrollY + window.innerHeight / 2;
+      let current = sections[0];
+
       for (const id of sections) {
         const section = document.getElementById(id);
         if (section) {
-          const rect = section.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom > 100) {
+          const top = section.offsetTop;
+          const bottom = top + section.offsetHeight;
+          if (scrollMiddle >= top && scrollMiddle < bottom) {
             current = id;
             break;
           }
         }
       }
+
       setActiveSection(current);
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); 
-
+    handleScroll(); // heti alussa
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <>
       <CookieAlert />
-      
+
       <div className="navbar">
         <nav>
           {/* Hamburger-painike mobiilissa */}
           <button
             className="menu-toggle"
-            onClick={() => setOpen(!open)}
+            onClick={() => setMenuOpen(!menuOpen)}
           >
-            {open ? "✖" : "☰"}
+            {menuOpen ? "✖" : "☰"}
           </button>
 
           {/* Linkit */}
-          <ul className={`nav-links ${open ? "show" : ""}`}>
+          <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
             {sections.map((id) => (
               <li key={id}>
                 <a
                   href={`#${id}`}
                   className={`nav-link ${activeSection === id ? "active" : ""}`}
-                  onClick={() => setOpen(false)} // sulkee menun klikattaessa
+                  onClick={() => setMenuOpen(false)}
                 >
-                  {id === "OtaYhteytta" ? "Ota yhteyttä" : id === "Yleista" ? "Yleistä" : id}
+                  {id === "OtaYhteytta"
+                    ? "Ota yhteyttä"
+                    : id === "Yleista"
+                    ? "Yleistä"
+                    : id}
                 </a>
               </li>
             ))}
