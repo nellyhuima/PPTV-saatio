@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import './Hakemus.css'; 
+
 
 const Hakemus = () => {
   const navigate = useNavigate();

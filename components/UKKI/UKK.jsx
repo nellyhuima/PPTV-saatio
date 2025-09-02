@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './UKK.css';
+
 
 const UKK = () => {
   // tracks which question is open
@@ -27,7 +27,7 @@ const UKK = () => {
         <div className="question" key={index}>
           <div className="question-opener" onClick={() => toggleAnswer(index)}>
             <p>{item.question}</p>
-            <span className="icon">{openIndex === index ? <i className="fa-solid fa-caret-up"></i> : <i className="fa-solid fa-caret-down"></i>}</span>
+            <span className="Uicon">{openIndex === index ? <i className="fa-solid fa-caret-up"></i> : <i className="fa-solid fa-caret-down"></i>}</span>
           </div>
           {openIndex === index && <p className="answer">{item.answer}</p>}
         </div>

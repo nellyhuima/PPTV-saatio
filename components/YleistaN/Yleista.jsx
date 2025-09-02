@@ -1,5 +1,5 @@
 import React from "react";
-import './Yleista.css'
+
 
 const Yleista = () => {
 
