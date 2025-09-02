@@ -1,25 +1,23 @@
-/* Inter Font */
 @font-face {
   font-family: 'Funnel-bold';
-  src: url('./FunnelDisplay-ExtraBold.ttf') format('truetype');
+  src: url('./LibreCaslonText-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Funnel';
-  src: url('./FunnelDisplay-Bold.ttf') format('truetype');
+  src: url('./LibreCaslonText-Regular.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Funnel-light';
-  src: url('./FunnelDisplay-Regular.ttf') format('truetype');
+  src: url('./Inter_28pt-Light.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
-}
-
+} 
 
 @font-face {
   font-family: 'Inter';

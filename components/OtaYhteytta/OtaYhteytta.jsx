@@ -20,10 +20,12 @@ const OtaYhteytta = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          alert("Viesti lähetetty.");
           e.target.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert("Viestiäsi ei voitu lähettää. Yritä myöhemmin uudelleen.")
         },
       );
   };
