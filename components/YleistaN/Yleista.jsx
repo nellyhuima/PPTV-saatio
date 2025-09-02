@@ -1,12 +1,12 @@
 import React from "react";
-import './Historia.css'
+import './Yleista.css'
 
-const Historia = () => {
+const Yleista = () => {
 
   return (
-    <div className="HistoriaContent">
-      <h1 className="HeaderForHistoria">Tietoa säätiöstä</h1>
-      <div className="HistoriaContainers">
+    <div className="YleistaContent">
+      <h1 className="HeaderForYleista">Tietoa säätiöstä</h1>
+      <div className="YleistaContainers">
         <div className="DivLeft">
           <div className="YleisestiDiv">
             <h2 className="Yleisesti">Perustaminen</h2>
@@ -40,4 +40,4 @@ const Historia = () => {
   );
 };
 
-export default Historia;
+export default Yleista;

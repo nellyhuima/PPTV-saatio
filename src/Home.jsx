@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import Etusivu from '../components/EtusivuN/Etusivu';
-import Historia from '../components/HistoriaN/Historia';
+import Yleista from '../components/YleistaN/Yleista';
 import Hakemus from '../components/HakemusI/Hakemus';
 import UKK from '../components/UKKI/UKK';
 import OtaYhteytta from '../components/OtaYhteytta/OtaYhteytta';
 import Footer from '../components/FooterN/Footer';
 import CookieAlert from '../components/CookieAlert/CookieAlert';
 
-const sections = ['Etusivu', 'Historia', 'Hakemus', 'UKK', 'OtaYhteytta'];
+const sections = ['Etusivu', 'Yleista', 'Hakemus', 'UKK', 'OtaYhteytta'];
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -58,7 +58,7 @@ const Home = () => {
                   className={`nav-link ${activeSection === id ? "active" : ""}`}
                   onClick={() => setOpen(false)} // sulkee menun klikattaessa
                 >
-                  {id === "OtaYhteytta" ? "Ota yhteyttä" : id}
+                  {id === "OtaYhteytta" ? "Ota yhteyttä" : id === "Yleista" ? "Yleistä" : id}
                 </a>
               </li>
             ))}
@@ -68,7 +68,7 @@ const Home = () => {
 
       {/* Sivun osiot */}
       <div id="Etusivu"><Etusivu /></div>
-      <div id="Historia"><Historia /></div>
+      <div id="Yleista"><Yleista /></div>
       <div id="Hakemus"><Hakemus /></div>
       <div id="UKK"><UKK /></div>
       <div id="OtaYhteytta"><OtaYhteytta /></div>
