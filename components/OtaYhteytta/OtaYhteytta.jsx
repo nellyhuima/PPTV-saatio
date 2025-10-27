@@ -11,10 +11,10 @@ const OtaYhteytta = () => {
 
     emailjs
       .sendForm(
-      "service_gcbeg44",
-      "template_ojkkszq", 
-      form.current, 
-      "MU7GSqKNFAaG76JpS"
+        "service_7xjjfuo", 
+        "template_82tc8ae", 
+        form.current, 
+        "Hho6IVsVx_IjbG2RK"
       )
 
       .then(
