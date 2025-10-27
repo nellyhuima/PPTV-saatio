@@ -35,7 +35,7 @@ Poliisiammattikorkeakoulu POLAMK Tampere` },
         <p className="text">
           Kriteerit täyttävälle hakijalle myönnetään säätiön stipendi tutkinnon suorittamisvuotena.
           Katso tarkempi ohje hakijalle ja suosittelijalle kohdista.
-          Painamalla alla olevaa nappia pääset täyttämään hakemuksen SignHero sivuilla.
+          Painamalla alla olevaa nappia pääset täyttämään hakemuksen tai suosittelijan lomakkeen SignHero sivuilla.
         </p>
         
         <div className="buttonContainer">

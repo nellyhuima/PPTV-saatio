@@ -47,7 +47,7 @@ useEffect(() => {
     const activeLink = document.querySelector(".nav-link.active");
     if (activeLink && underline) {
       const linkRect = activeLink.getBoundingClientRect();
-      const ulRect = activeLink.parentElement.parentElement.getBoundingClientRect();
+      const ulRect = activeLink.closest("ul").getBoundingClientRect();
       underline.style.width = `${linkRect.width}px`;
       underline.style.transform = `translateX(${linkRect.left - ulRect.left}px)`;
     }
@@ -79,7 +79,11 @@ useEffect(() => {
                 <a
                   href={`#${id}`}
                   className={`nav-link ${activeSection === id ? "active" : ""}`}
-                  onClick={() => setMenuOpen(false)}
+                    onClick={() => {
+                        setMenuOpen(false);  
+                        setActiveSection(id);
+                    }}
+                  
                 >
                   {id === "OtaYhteytta"
                     ? "Ota yhteyttä"
