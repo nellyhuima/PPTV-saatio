@@ -14,7 +14,7 @@ const UKK = () => {
     { question: "Kuka voi hakea stipendiä?", answer: "Hakija voi olla Pohjois-Pohjanmaalla ammattiopistossa tai ammattikorkeakoulussa tutkintoa suorittava henkilö (tuutori, oppilaskunnan jäsen, järjestöaktiivi opiskeluaikana). Emme myönnä stipendejä YAMK tutkintoa suorittavalle." },
     { question: "Milloin stipendi hakemukset käsitellään?", answer: "Hakemukset käsitellään säätiön toukokuun ja joulukuun kokouksissa. Olemme yhteydessä stipendin hakijaan sähköpostitse. Tieto menee myös hakijan suosittelijalle ja oppilaitokselle." },
     { question: "Millä stipendin voi ansaita?", answer: "Hakija voi olla ammattiopistossa tai ammattikorkeakoulussa tutkintoa suorittava henkilö (tuutori, oppilaskunnan jäsen, järjestöaktiivi opiskeluaikana) mainituista oppilaitoksista. Hakemukseen on liitettävä suosittelija esim. opinto-ohjaaja, oppilaskunnan puheenjohtaja/varapuheenjohtaja." },
-    { question: "Kuka olisi hyvä suosittelija?", answer: "Suosittelija voi olla esim. opinto-ohjaaja, oppilaskunnan puheenjohtaja/varapuheenjohtaja" },
+    { question: "Kuka olisi hyvä suosittelija?", answer: "Suosittelija voi olla esim. opinto-ohjaaja, oppilaskunnan puheenjohtaja/varapuheenjohtaja." },
     { question: "Mitä stipendi sisältää?", answer: "Rahasumma määräytyy hakijoiden määrän tai hallituksen päätöksen mukaisesti." },
     { question: "Miten voin olla säätiöön yhteydessä?", answer: "Ota yhteyttä kohdassa voit lähettää sähköpostia. " },
     { question: "Opiskelen poliisiammattikorkeakoulussa", answer: "Mikäli olet kriteerit täyttävä hakija Pohjois-Pohjanmaalta ja/tai suoritat opiskeluusi liittyvää harjoittelua Oulun poliisilaitoksen alueella, olet oikeutettu hakemaan stipendiä valmistumisvuonnasi." },

@@ -38,7 +38,11 @@ Poliisiammattikorkeakoulu POLAMK Tampere` },
           Painamalla alla olevaa nappia pääset täyttämään hakemuksen SignHero sivuilla.
         </p>
         
-        <button className="lomakebutton" onClick={() => navigate('/Lomake')}>Hae tästä!</button>
+        <div className="buttonContainer">
+        <button className="lomakebutton" onClick={() => navigate('/Lomake')}>Hakijalle</button>
+        <button className="lomakebutton" onClick={() => navigate('/Lomake')}>Suosittelijalle</button>
+        </div>
+
       </div>
       <section className="Hfaq">
       {faqData.map((item, index) => (

@@ -13,31 +13,50 @@ const Home = () => {
   const [activeSection, setActiveSection] = useState(sections[0]);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Seuraa scrollia ja aseta aktiivinen osio
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollMiddle = window.scrollY + window.innerHeight / 2;
-      let current = sections[0];
+  //Scrollin seuranta -> activeSection päivittyy
+ useEffect(() => {
+  const handleScroll = () => {
+    const scrollMiddle = window.scrollY + window.innerHeight / 2;
+    let current = sections[0];
 
-      for (const id of sections) {
-        const section = document.getElementById(id);
-        if (section) {
-          const top = section.offsetTop;
-          const bottom = top + section.offsetHeight;
-          if (scrollMiddle >= top && scrollMiddle < bottom) {
-            current = id;
-            break;
-          }
+    for (const id of sections) {
+      const section = document.getElementById(id);
+      if (section) {
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
+        if (scrollMiddle >= top && scrollMiddle < bottom) {
+          current = id;
+          break;
         }
       }
+    }
 
-      setActiveSection(current);
-    };
+    setActiveSection(current);
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // heti alussa
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // heti alussa
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
+// Liikkuva viiva -> päivittyy kun activeSection muuttuu
+useEffect(() => {
+  const underline = document.querySelector(".active-underline");
+
+  const updateUnderline = () => {
+    const activeLink = document.querySelector(".nav-link.active");
+    if (activeLink && underline) {
+      const linkRect = activeLink.getBoundingClientRect();
+      const ulRect = activeLink.parentElement.parentElement.getBoundingClientRect();
+      underline.style.width = `${linkRect.width}px`;
+      underline.style.transform = `translateX(${linkRect.left - ulRect.left}px)`;
+    }
+  };
+
+  updateUnderline();
+  window.addEventListener("resize", updateUnderline);
+  return () => window.removeEventListener("resize", updateUnderline);
+}, [activeSection]);
 
   return (
     <>
@@ -70,6 +89,7 @@ const Home = () => {
                 </a>
               </li>
             ))}
+            <span className="active-underline" />
           </ul>
         </nav>
       </div>
