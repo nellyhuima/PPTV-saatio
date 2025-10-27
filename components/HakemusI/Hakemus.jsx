@@ -24,8 +24,8 @@ Raahen porvari- ja kauppakoulu RPKK
 PSK-aikuisopisto Oulu
 Oulun Palvelualanopisto OPAO
 Poliisiammattikorkeakoulu POLAMK Tampere` },
-       { question: "Ohje hakijalle", answer: 'Tähän tulee ohje hakijalle hakemuksen täyttämiseen.'},
-       { question: "Ohje suosittelijalle", answer: 'Tähän tulee ohje Suosittelijalle hakemuksen täyttämiseen.'},
+       { question: "Ohje hakijalle", answer: 'Hakija voi olla ammattiopistossa tai ammattikorkeakoulussa tutkintoa suorittava henkilö (tuutori, oppilaskunnan jäsen, järjestöaktiivi opiskeluaikana) mainituista oppilaitoksista. Hakemukseen on liitettävä suosittelija esim. opinto-ohjaaja, oppilaskunnan puheenjohtaja/varapuheenjohtaja. Muista täyttää hakemus huolellisesti ja tarkista että, hakemuksessa on oikeat yhteystietosi ja tilinumerosi. Tarkista oppilaitoksesi kohteista kuulutko kohderyhmään.'},
+       { question: "Ohje suosittelijalle", answer: 'Kirjoita stipendin hakijasta perustellut näkemyksesi minkä vuoksi hänelle tulisi myöntää stipendi. Hyväksymisessä korostuu samat kriteerit kuin "ohje hakijalle" kohdassa.'},
       ];
    
   return (
@@ -33,8 +33,9 @@ Poliisiammattikorkeakoulu POLAMK Tampere` },
       <div className='lomakeContent'>
         <h1 className="Htext">Hakemus</h1>
         <p className="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat,  
+          Kriteerit täyttävälle hakijalle myönnetään säätiön stipendi tutkinnon suorittamisvuotena.
+          Katso tarkempi ohje hakijalle ja suosittelijalle kohdista.
+          Painamalla alla olevaa nappia pääset täyttämään hakemuksen SignHero sivuilla.
         </p>
         
         <button className="lomakebutton" onClick={() => navigate('/Lomake')}>Hae tästä!</button>
