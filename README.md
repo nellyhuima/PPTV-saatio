@@ -1,16 +1,47 @@
-# React + Vite
+Nettisivun muokkaus: 
+1. Lataa VScode tietokoneelle 
+Visual Studio Coden asentaminen ohje 
+Asenna Visual Studio Code alla olevan linkin takaa. Visual Studio Code ei ole sama 
+ohjelma kuin Microsoft Visual Studio. 
+Lataa Windowsin asennusohjelma osoitteesta https://code.visualstudio.com/download 
+Kun tiedoston lataaminen on valmis, tuplaklikkaa tiedostoa avataksesi 
+asennusohjelma. 
+Tämän jälkeen seuraa ruudulle tulevia ohjeita. 
+2. Avaa kansio VScodeen 
+Sanotaan, että haluatte muuttaa kohdekoulu listaa: 
+3. Vasemalla näkyy PPTV-saatio kansio, components kansiosta avaa HakemusI kansio 
+4. Avaa Hakemus.jsx tiedosto 
+5. Navigoi koodi kohtaan, jossa lukee ”kohteet” ja näkyy kaikki kohdekoulut rivittäin 
+Tässä kohdassa voit joko muuttaa olemassa olevaa kohdetta, poistaa kohteita tai lisätä uusia 
+kohteita. Mikäli lisäät uuden kohteen, tee uusi rivi ja kirjoita kohdekoulun nimi siihen. 
+HUOM! Muista tallentaa muutokset painamalla shift + S, tai menemällä 
+vasemman yläkulman file kohtaan ja painamalla ”Save”. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
+Miten päivittää uusi versio nettiin: 
+1. VScodessa:  
+a. Paina ctrl + shift + Ö samaan aikaan, tämä avaa terminaalin. 
+b. Kirjoita terminaaliin komento: npm run build ja paina enter. 
+c. Odota kunnes build on valmis 
+d. PPTV-saatio kansioon tulee uusi kansio nimeltä ”dist” 
+2. Googlessa: 
+a. Avaa google ja mene osoitteeseen: http://plesk31.hostaan.fi/ 
+b. Kirjaudu 
+c. Avaa tiedostot välilehti  
+d. Valitse kansio nimeltä ”httpdocs” 
+e. Valitse assets kansio ja index tiedosto
+f. Poista valitut tiedostot 
+Jos et halua, poistaa tiedostoja, voit myös arkistoida ne. 
+g. Paina plussa ikonia 
+h. Paina ”lataa tiedosto”, tätä painamalla avautuu koneen tiedostot 
+i. Avaa dist kansio 
+j. Valitse index tiedosto 
+k. Paina ”avaa” nappia 
+l. Paina plussa ikonia 
+m. Paina ”Lataa hakemisto” kohtaa 
+n. Avaa tietokoneen resurssienhallinta 
+o. Etsi dist kansio 
+p. Etsi assets kansio 
+q. Rahaa assets kansio pleskiin
 
 MIT License
 
