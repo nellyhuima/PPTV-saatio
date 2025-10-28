@@ -11,11 +11,9 @@ const sections = ["Etusivu", "Yleista", "Hakemus", "UKK", "OtaYhteytta"];
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(sections[0]);
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Scrollin perusteella vaihtaa activeSection
   useEffect(() => {
-    const handleScroll = () => {
+    const updateActiveSectionAndUnderline = () => {
       const scrollMiddle = window.scrollY + window.innerHeight / 2;
       let current = sections[0];
 
@@ -30,59 +28,61 @@ const Home = () => {
           }
         }
       }
+
       setActiveSection(current);
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // heti alussa
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Päivittää liukuvan viivan sijainnin
-  useEffect(() => {
-    const underline = document.querySelector(".active-underline");
-
-    const updateUnderline = () => {
-      const activeLink = document.querySelector(".nav-link.active");
-      if (activeLink && underline) {
-        const linkRect = activeLink.getBoundingClientRect();
-        const ulRect = activeLink.closest("ul").getBoundingClientRect();
-        const offset = linkRect.left - ulRect.left;
-        underline.style.width = `${linkRect.width}px`;
-        underline.style.transform = `translateX(${offset}px)`;
+      // Päivitä liukuvan viivan sijainti suhteessa nav-links
+      const underline = document.querySelector(".active-underline");
+      const activeLink = document.querySelector(`.nav-link[href="#${current}"]`);
+      if (underline && activeLink) {
+        const rect = activeLink.getBoundingClientRect();
+        const navRect = activeLink.closest(".nav-links").getBoundingClientRect();
+        underline.style.width = `${rect.width}px`;
+        underline.style.transform = `translateX(${rect.left - navRect.left}px)`;
       }
     };
 
-    updateUnderline();
-    window.addEventListener("scroll", updateUnderline);
-    window.addEventListener("resize", updateUnderline);
+    window.addEventListener("scroll", updateActiveSectionAndUnderline);
+    window.addEventListener("resize", updateActiveSectionAndUnderline);
+
+    updateActiveSectionAndUnderline(); // heti alussa
+
     return () => {
-      window.removeEventListener("scroll", updateUnderline);
-      window.removeEventListener("resize", updateUnderline);
+      window.removeEventListener("scroll", updateActiveSectionAndUnderline);
+      window.removeEventListener("resize", updateActiveSectionAndUnderline);
     };
-  }, [activeSection]);
+  }, []);
+
+  const handleClick = (id) => {
+    setActiveSection(id);
+    const underline = document.querySelector(".active-underline");
+    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+    if (underline && activeLink) {
+      const rect = activeLink.getBoundingClientRect();
+      const navRect = activeLink.closest(".nav-links").getBoundingClientRect();
+      underline.style.width = `${rect.width}px`;
+      underline.style.transform = `translateX(${rect.left - navRect.left}px)`;
+    }
+  };
 
   return (
     <>
       <CookieAlert />
       <div className="navbar">
         <nav>
-          <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? "✖" : "☰"}
-          </button>
-
-          <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
+          <ul className="nav-links">
             {sections.map((id) => (
               <li key={id}>
                 <a
                   href={`#${id}`}
                   className={`nav-link ${activeSection === id ? "active" : ""}`}
-                  onClick={() => {
-                    setMenuOpen(false); // sulkee mobiili-menun
-                    setActiveSection(id); // päivittää viivan
-                  }}
+                  onClick={() => handleClick(id)}
                 >
-                  {id === "OtaYhteytta" ? "Ota yhteyttä" : id === "Yleista" ? "Yleistä" : id}
+                  {id === "OtaYhteytta"
+                    ? "Ota yhteyttä"
+                    : id === "Yleista"
+                    ? "Yleistä"
+                    : id}
                 </a>
               </li>
             ))}
