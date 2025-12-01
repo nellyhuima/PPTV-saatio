@@ -35,12 +35,12 @@ Poliisiammattikorkeakoulu POLAMK Tampere` },
         <p className="text">
           Kriteerit täyttävälle hakijalle myönnetään säätiön stipendi tutkinnon suorittamisvuotena.
           Katso tarkempi ohje hakijalle ja suosittelijalle kohdista.
-          Painamalla alla olevaa nappia pääset täyttämään hakemuksen tai suosittelijan lomakkeen SignHero sivuilla.
+          Painamalla alla olevaa nappia pääset täyttämään ja allekirjoittamaan hakemuksen tai suosittelijan lomakkeen Visma Sign sivuilla.
         </p>
         
         <div className="buttonContainer">
-        <button className="lomakebutton" onClick={() => navigate('/Lomake')}>Hakijalle</button>
-        <button className="lomakebutton" onClick={() => navigate('/Lomake')}>Suosittelijalle</button>
+        <button className="lomakebutton" onClick={() => window.location.href = "https://www.vismasignforms.com/form/25b198e0-3766-4810-8e96-41c2a2c7b7e7"}>Hakijalle</button>
+        <button className="lomakebutton" onClick={() => window.location.href = "https://www.vismasignforms.com/form/d6467243-3847-41b2-81f6-4d5df2d9d7fc"}>Suosittelijalle</button>
         </div>
 
       </div>

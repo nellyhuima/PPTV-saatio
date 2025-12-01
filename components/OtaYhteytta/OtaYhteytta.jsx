@@ -43,7 +43,7 @@ const OtaYhteytta = () => {
       <div className='Oform'>
         <form ref={form} onSubmit={sendEmail}>
           <label className='YhteysLabel'></label>
-          <input className='Oinput' placeholder='Nimi' type="text" name="user_name" />
+          <input className='Oinput' placeholder='Nimi' placeholdercolor='white' type="text" name="user_name" />
           <label className='YhteysLabel'></label>
           <input className='Oinput'placeholder='Sähköposti' type="email" name="user_email" />
           <label className='YhteysLabel'></label>
