@@ -101,14 +101,14 @@ a {
     background-repeat: no-repeat;
 }
 
-#Etusivu { background-image: url('../components/img/Fetusivu.jpg'); }
-#Yleista { background-image: url('../components/img/Fyleista.jpg'); display: inline-block; }
-#Hakemus { background-image: url('../components/img/Fhakemus.jpg'); display: inline-block; }
-#UKK { background-image: url('../components/img/Fukk.jpg'); display: inline-block; }
-#OtaYhteytta { background-image: url('../components/img/Fotayhteytta.jpg'); display: inline-block; }
+#Etusivu { background-image: url('../components/img/Vetusivu.png'); }
+#Yleista { background-image: url('../components/img/Vyleista.png'); display: inline-block; }
+#Hakemus { background-image: url('../components/img/Vhakemus.png'); display: inline-block; }
+#UKK { background-image: url('../components/img/Vukk.png'); display: inline-block; }
+#OtaYhteytta { background-image: url('../components/img/Vyhteys.png'); display: inline-block; }
 
 #Footer {
-    background: rgb(37, 49, 39);
+    background: rgb(20, 27, 30);
 }
 
 /* ===========================
@@ -146,13 +146,13 @@ a {
 
 
 /* YHTEYSLOMAKE */
-.YhteysLomake { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.YhteysLomake {flex: 1; display: flex; flex-direction: column; align-items: center; }
 .Hteksti { font-size: 28px; color: white;  font-family: 'Funnel'; text-align: center; }
-.Ohjeet { display: flex; flex-direction: column; align-items: center; }
+.Ohjeet { display: flex; flex-direction: column; align-items: center; margin-bottom: 2em;}
 .YhteysText { width: 100%; max-width: 300px; font-size: 16px; color: white; text-align: center; margin-bottom: 1.5em; }
-.Oinput, .Otextarea { width: 100%; max-width: 25em; font-size: 17px; padding: 0.5em; margin: 0.3em 0 1em 0; border-radius: 3px; border: 1px solid rgb(255, 255, 255, 0.8); background-color: rgba(0, 0, 0, 0.3); color: white; outline: none; font-family: 'Inter'; }
+.Oinput, .Otextarea {width: 100%; max-width: 25em; font-size: 17px; padding: 0.5em; margin: 0.3em 0 1em 0; border-radius: 3px; border: 1px solid rgb(255, 255, 255, 0.8); background-color: rgba(0, 0, 0, 0.3); color: white; outline: none; font-family: 'Inter'; }
 .Oinput::placeholder, .Otextarea::placeholder {color: #dedede;}
-.Obutton { width: 100%; font-size: 16px; padding: 10px 20px; margin-top: 1em; border-radius: 3px; border: 1px solid rgba(255,255,255, 0.8); background-color: rgba(0,0,0,0.3); cursor: pointer; color: white; }
+.Obutton {max-width: 10em; width: 100%; font-size: 16px; padding: 10px 20px; margin-top: 1em; margin-left: 6em; border-radius: 3px; border: 1px solid rgba(255,255,255, 0.8); background-color: rgba(0,0,0,0.3); cursor: pointer; color: white; }
 .Obutton:hover { background-color: rgba(0,0,0,0.5); }
 
 /* ===========================
@@ -160,7 +160,7 @@ a {
 =========================== */
 .ukkpohja { margin: 1.5em 1em 0 1em; display: flex; flex-direction: column; padding-bottom: 1em; align-items: center; }
 .Htekst { font-size: 28px; color: white; font-family: 'Funnel'; margin-bottom: 1.5em; text-align: center; }
-.question { width: 100%; font-size: 16px; margin: 1em 0; padding: 0; border-radius: 2px; border: 1px solid rgba(255,255,255,0.8); color: white; cursor: pointer; }
+.question {background-color: rgba(0,0,0,0.35); width: 100%; font-size: 16px; margin: 1em 0; padding: 0; border-radius: 2px; border: 1px solid rgba(255,255,255,0.8); color: white; cursor: pointer; }
 .question-opener { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0.8em 1em; }
 .question-opener p { flex-grow: 1; margin: 0; word-break: break-word; }
 .Uicon { font-size: 10px; transition: transform 0.3s; font-weight: bold; flex-shrink: 0; }
@@ -224,7 +224,7 @@ a {
         align-items: flex-start;
         width: 77%;
         max-width: 1200px;          
-        gap: 2em;                  
+        gap: 2em;                 
     }
 
     .DivLeft, .DivRight {
@@ -245,8 +245,7 @@ a {
     }
     .HeaderForYleista {
         font-size: 42px; 
-    
-       
+        margin-top: 1.7em; 
     }
 
     /*hakemus*/
@@ -387,10 +386,9 @@ a {
   /*yhteys*/
    .YhteysLomake {
       flex: 1;
-      display: flex;
+      display: flex;   
       flex-direction: column;
-      align-items: center;
-      gap: 1.5em;         
+    align-items: center;   
       max-width: 800px;        
       margin: 0 auto;             
       padding: 2em 1em;        
@@ -400,11 +398,6 @@ a {
       font-size: 42px;        
   }
 
-  .Ohjeet {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
 
   .YhteysText {
       width: 100%;
@@ -416,8 +409,8 @@ a {
   }
 
   .Oinput, .Otextarea {
-      width: 30em;
-      max-width: 500px;            
+    width: 25em;
+    max-width: 500px;        
       font-size: 18px;
       padding: 0.75em;          
       margin: 0.5em 0 1.5em 0; 
@@ -425,13 +418,18 @@ a {
   }
 
   .Obutton {
-      width: auto;                
+      width: auto;          
       min-width: 8em;
       font-size: 20px;          
       padding: 12px 25px;         
-      margin-top: 1em;
       border-radius: 5px;
   }
+
+  .Oinput, .Otextarea, .Obutton {
+    margin-left: auto;
+    margin-right: auto;
+        display: block;
+}
 
   .Obutton:hover {
       background-color: rgba(0,0,0,0.5);
