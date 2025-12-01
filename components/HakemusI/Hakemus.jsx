@@ -15,7 +15,8 @@ const Hakemus = () => {
  
      const faqData = [
        { question: "Kohteet", 
-        answer: `Oulun Ammattikorkeakoulu OAMK
+        answer: 
+`Oulun Ammattikorkeakoulu OAMK
 Oulun seudun ammattiopisto OSAO
 Ammattiopisto Luovi
 Jokilaaksojen seudun ammattiopisto JEDU
