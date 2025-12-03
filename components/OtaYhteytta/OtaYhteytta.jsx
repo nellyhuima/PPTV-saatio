@@ -36,7 +36,7 @@ const OtaYhteytta = () => {
         <h1 className='Hteksti'>Ota yhteyttä</h1>
         <p className='YhteysText'>
           Mikäli sinulla on kysyttävää, 
-          voit tällä lomakkeella lähettää meille viestin.
+          voit lähettää meille viestin.
           Vastaamme sinulle pikimmiten!
         </p>
       </div>

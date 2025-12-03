@@ -26,7 +26,7 @@ PSK-aikuisopisto Oulu
 Oulun Palvelualanopisto OPAO
 Poliisiammattikorkeakoulu POLAMK Tampere` },
        { question: "Ohje hakijalle", answer: 'Hakija voi olla ammattiopistossa tai ammattikorkeakoulussa tutkintoa suorittava henkilö (tuutori, oppilaskunnan jäsen, järjestöaktiivi opiskeluaikana) mainituista oppilaitoksista. Hakemukseen on liitettävä suosittelija esim. opinto-ohjaaja, oppilaskunnan puheenjohtaja/varapuheenjohtaja. Muista täyttää hakemus huolellisesti ja tarkista että, hakemuksessa on oikeat yhteystietosi ja tilinumerosi. Tarkista oppilaitoksesi kohteista kuulutko kohderyhmään.'},
-       { question: "Ohje suosittelijalle", answer: 'Kirjoita stipendin hakijasta perustellut näkemyksesi minkä vuoksi hänelle tulisi myöntää stipendi. Hyväksymisessä korostuu samat kriteerit kuin "ohje hakijalle" kohdassa.'},
+       { question: "Ohje suosittelijalle", answer: 'Kirjoita stipendin hakijasta perusteltu näkemyksesi, minkä vuoksi hänelle tulisi myöntää stipendi. Hyväksymisessä korostuvat samat kriteerit kuin "ohje hakijalle" kohdassa.'},
       ];
    
   return (
@@ -34,8 +34,8 @@ Poliisiammattikorkeakoulu POLAMK Tampere` },
       <div className='lomakeContent'>
         <h1 className="Htext">Hakemus</h1>
         <p className="text">
-          Kriteerit täyttävälle hakijalle myönnetään säätiön stipendi tutkinnon suorittamisvuotena.
-          Katso tarkempi ohje hakijalle ja suosittelijalle kohdista.
+          Kriteerit täyttävälle hakijalle voidaan myöntää säätiön stipendi tutkinnon suorittamisvuotena.
+          Katso tarkempi ohje hakijalle ja suosittelijalle omista kohdistaan.
           Painamalla alla olevaa nappia pääset täyttämään ja allekirjoittamaan hakemuksen tai suosittelijan lomakkeen Visma Sign sivuilla.
         </p>
         

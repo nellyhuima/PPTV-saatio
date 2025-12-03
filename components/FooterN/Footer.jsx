@@ -37,7 +37,6 @@ const Footer = () => {
           <p>1567052-5</p>
           <p>Lahdenojantie 24</p>
           <p>90810 Kiviniemi</p>
-          <p>+358 443745751</p>
           <br></br>
           <h2 className='modalSmallHeader'>2. YHTEYSHENKILÖ</h2>
           <p>Pasi Karppinen</p>

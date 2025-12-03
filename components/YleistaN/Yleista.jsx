@@ -13,10 +13,10 @@ const Yleista = () => {
             <p className="YleisestiTeksti">
               Pohjois- Pohjanmaan Toimihenkilö- ja Virkamiesjärjestöjen Säätiö (PPTV) on TVK:n 
               Pohjois-Pohjanmaan Aluejärjestö ry:n 11.10.1994 perustama puoluepoliittisesti 
-              sitoutumaton Säätiö.
+              sitoutumaton Säätiö (Nykyisin STTK:n jäsenliitot sekä SPJL Akavan osalta).
               
               Säätiön hallituksen jäseniksi kutsutaan perustajajärjestöjen 
-              Toimihenkilö- ja virkamiesjärjestöistä. Hallitukseen kuuluvat 20.10.2011 alkaen 
+              toimihenkilö- ja virkamiesjärjestöistä. Hallitukseen kuuluvat 20.10.2011 alkaen 
               puheenjohtaja, varapuheenjohtaja ja 10 jäsentä.
             </p>
           </div>
@@ -31,7 +31,7 @@ const Yleista = () => {
               
               <br />Säätiö toteuttaa säädekirjan mukaista
               tarkoitustaan mm jakamalla stipendejä järjestöllisesti aktiivisille oppilaskunnan jäsenille, vertaistukiohjaajan
-              ja tuutortyöstä suositusten mukaan.
+              ja tutortyöstä suositusten mukaan.
             </p>
           </div>
         </div>
